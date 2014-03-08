@@ -277,4 +277,174 @@ $(".rslides").responsiveSlides({
 > <html><body><p>&gt;
 </p><li><a class="nHandcut" href="calendar">Calendar</a></li>
 <div id="logo">
-<img alt="" src="imag
+<img alt="" src="imag> 
+<!DOCTYPE html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+> ible" content="IE=EmulateIE9" &gt;
+<title>TLC - The Student Site</title>
+<meta content="index,follow" name="robots"/>
+
+> ="distribution" content="global" /&gt;
+		<meta content="weekly" name="revisit-after"/>
+
+> rning Connexion - International School of Art and Creativity. Turn your life into a work of art." /&gt;
+
+		
+> ntent="Learning Connexion, The Learning Connection, Learning, Art, Creativity, Wellington Art Course, Kids Art Classes, Art Clas
+> s, Art Classes, Wellington Art Class, Wellington Art School, Art Students" /&gt;
+
+		
+> thor" /&gt;
+
+		<meta content="The Learning Connexion" name="copyright"/>
+
+>  /&gt;
+<base href="http://www.tlcstudents.ac.nz/">
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+</base>
+> jax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;
+
+> s"&gt;
+<script type="text/javascript"></script>
+> rchreplace visualblocks code fullscreen"
+			    ],
+			    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft
+>  aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+			});
+			
+
+> .googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"&gt;
+<script src="js/responsiveslides.min.js"></script>
+<script></script>
+> nction() {
+$(".rslides").responsiveSlides();
+$(".rslides").responsiveSlides({
+});
+});
+
+<script type="text/javascript"></script>
+> 
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-3260176-2']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() 
+> {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == doc
+> ument.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTag
+> Name('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		
+
+<body>
+<div id="wrapper">
+</div></body>
+> r"&gt;
+<div id="navigation">
+<ul>
+<li><a class="nActive" href="home">Home</a></li>
+<li><a class="nHandcut" href="classes">Classes</a></li></ul></div>
+> a&gt;
+<li><a class="nHandcut" href="http://workroom.ac.nz">The Workroom</a></li>
+<li></li>
+> nts.ac.nz/videoLibrary/www/"&gt;Video Library
+<li><a class="nHandcut" href="tlcExhibition">TLC Exhibition</a></li>
+<li></li>
+> class="nHandcut" href="studentLife"&gt;Student Life
+<li><a class="nHandcut" href="studentHandbook">Student Handbook</a></li>
+> i&gt;
+<li><a class="nHandcut" href="calendar">Calendar</a></li>
+
+
+<div id="logo">
+<img alt="" src="images/logo.png"/>
+</div>
+> div id="social"&gt;
+<ul>
+<li><a href="https://www.facebook.com/pages/The-Learning-Connexion/146166395402880"></a></li></ul>
+> l/fbA.png" alt="" /&gt;
+<li><a href="https://twitter.com/tlcxpress"><img alt="" src="images/social/tA.png"/></a></li>
+
+> &gt;<a href="http://www.youtube.com/user/learningconnexion"><img alt="" src="images/social/yA.png"/></a>
+<li></li>
+> www.flickr.com/photos/thelearningconnexion/"&gt;<img alt="" src="images/social/fA.png"/>
+
+
+<div id="search">
+</div>
+> form method="post" action="/home"&gt;
+<div class="col3" id="searching_msg"></div>
+<p>
+<label class="col1" for="searching"></label>
+</p>
+> <input class="col2" id="searching" maxlength="40" name="searching" placeholder="Search" type="text" value=""/>
+
+
+
+> div class="pageMsg"&gt;
+
+<div id="content">
+<div id="spacer">
+<div id="homePage">
+<ul>
+<li>
+</li></ul></div></div></div>
+> "&gt;<span class="heading"><a href="classes">Classes</a></span>
+
+<li>
+<div class="button"><span class="buttonImage"></span></div></li>
+> img src="images/studentImages/2.png" alt="" /&gt;
+
+<li>
+<div class="button"><span class="heading"></span></div></li>
+> dentLife/tLCBus"&gt;TLC Bus Timetable
+
+<li>
+<div class="button"><span class="buttonImage"></span></div></li>
+> /studentImages/4.png" alt="" /&gt;
+
+<li>
+<div class="button"><span class="heading"></span></div></li>
+> rFeed"&gt;Twitter Feed
+
+<li>
+<div class="button"><span class="buttonImage"></span></div></li>
+> 1.png" alt="" /&gt;
+
+<li>
+<div class="button"><span class="heading"><a href="http://workroom.ac.nz">The Workro</a></span></div></li>
+> om
+
+<li>
+<div class="button"><span class="buttonImage"><img alt="" src="images/studentImages/3.png"/></span></div></li>
+> /span&gt;
+
+<li>
+<div class="button"><span class="heading"><a href="http://tlcstudents.ac.nz/videoLibrary/www/">The Vi</a></span></div></li>
+> deo Library
+
+
+
+
+<div id="subNav">
+<ul>
+</ul>
+</div>
+<div id="footer">
+<ul><li></li></ul></div>
+> trong&gt;<a href="http://www.tlc.ac.nz">tlc.ac.nz</a><li><strong><a href="http://www.tlcxpress.ac.nz">TLC Xpress</a></strong></li>
+> /strong&gt;<li><strong>The Learning Connexion - 182 Eastern Hutt Road, Taita, Lower Hutt 5019</strong></li><li><strong>0800 27</strong></li>
+> 8 769<li><a href="mailto:info@tlc.ac.nz"><strong>info@tlc.ac.nz</strong></a></li>
+
+
+
+
+> &gt;
+
+
