@@ -57,6 +57,10 @@ print fullurlz
 
 # <codecell>
 
+fuz = str(fullurlz)
+
+# <codecell>
+
 print fulur
 
 # <markdowncell>
@@ -66,7 +70,7 @@ print fulur
 # <codecell>
 
 getfullurl = requests.get(fullurlz)
-loazfullurl = json.loads(getfullurl)
+loazfullurl = json.loads(fullurlz)
 
 # <codecell>
 
@@ -88,17 +92,32 @@ print loaPrn
 # <codecell>
 
 for feed in loaPrn[u'videos']:
-    for entry in feed[u'video']:
-        print entry
+    print feed
+    #for entry in feed[u'video']:
+        #print entry
 
 # <codecell>
 
-addnums = 0
+titlost = []
 
-for nums in range(100):
-    naoPrn = loaPrn[u'videos'][addnums]
-    print naoPrn
-    addnums + 1 
+# <codecell>
+
+for nums in range(20):
+    naoPrn = loaPrn[u'videos'][nums]
+    #print naoPrn
+    
+    ngePrn = naoPrn[u'video']
+    #print ngePrn
+    urlPrn = ngePrn[u'title']
+    titlost.append(urlPrn)
+    print urlPrn
+
+# <codecell>
+
+print titlost
+
+# <codecell>
+
 
 # <codecell>
 
@@ -299,7 +318,11 @@ urlHub.entries[0]
 
 # <codecell>
 
+
+# <codecell>
+
 for daHub, da in enumerate([titlHub, linHub, pubHub, imgHub]):
+    titlost.append(titHub)
     print daHub, da
 
 # <codecell>
