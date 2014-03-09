@@ -34,11 +34,16 @@
 
 # <codecell>
 
-cusname = 'williamcliffordmckeewww'
+cusname = 'patches moodley'
 
 # <codecell>
 
-productname = 'wwwalter whites: ble meth'
+productname = 'dog biskets'
+
+# <codecell>
+
+cunum = 0
+salelist = []
 
 # <codecell>
 
@@ -52,24 +57,31 @@ print chrinpro
 
 if (chrinpro % 2 == 0):
     print 'true'
+    letiname = ['a', 'e', 'i', 'o', 'u', 'y']
 else:
     print 'false'
+    letiname = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
 
 # <codecell>
 
-letiname = ['a', 'e', 'i', 'o', 'u', 'y']
+for extension in letiname:
+    if extension in cusname:
+        print(extension, cunum +1)
+        #salelist.append(extension)
+        salelist.append(cunum +1)
+        #print saledict
 
 # <codecell>
 
-consoltlist = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
+cusa = sum(salelist)
 
 # <codecell>
 
-print consoltlist
+fincus = cusa * 1.5
 
 # <codecell>
 
-print letiname
+print fincus
 
 # <codecell>
 
@@ -86,33 +98,13 @@ thenum = 0
 
 # <codecell>
 
-cunum = 0
-salelist = []
-
-# <codecell>
-
-for extension in consoltlist:
-    if extension in cusname:
-        print(extension, cunum +1)
-        #salelist.append(extension)
-        salelist.append(cunum +1)
-        #print saledict
-
-# <codecell>
-
 print salelist
 
 # <codecell>
 
-cusa = sum(salelist)
 
 # <codecell>
 
-fincus = cusa * 1.5
-
-# <codecell>
-
-print fincus
 
 # <codecell>
 
@@ -162,6 +154,21 @@ print cuscol
 
 # <codecell>
 
+doctpro = dict(procol)
+
+# <codecell>
+
+dictcol = dict(cuscol)
+
+# <codecell>
+
+available = set(doctpro.keys())
+satchel = set(dictcol.keys())
+
+print available.difference(satchel)
+
+# <codecell>
+
 diff = set(procol.keys()) - set(cuscol.keys())
 
 # <codecell>
@@ -180,32 +187,6 @@ for key in cuscol.keys():
 
 # <codecell>
 
-
-# <codecell>
-
-if chrinpro is even:
-    print 'even'
-else:
-    print 'odd'
-
-# <codecell>
-
-dict((y, x) for x, y in t)
-#{'a': 1, 'b': 2}
-
-# <codecell>
-
-{}
-
-# <codecell>
-
-if "x" in cusname:
-    print "Yes!"
-else:
-    print 'no'
-
-# <codecell>
-
 for n in letiname:
     print n
     if n in cusname:
@@ -213,13 +194,4 @@ for n in letiname:
         print thenum + 1
         print cusname
     
-
-# <codecell>
-
-
-if "x" in dog:
-    print "Yes!"
-
-# <codecell>
-
 
