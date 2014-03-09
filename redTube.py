@@ -45,6 +45,9 @@ print endlist
 
 # <codecell>
 
+
+# <codecell>
+
 fullurlz = redhtp + ranclist + redj
 
 # <codecell>
@@ -70,6 +73,15 @@ print fulur
 # <codecell>
 
 getfullurl = requests.get(fullurlz)
+
+# <codecell>
+
+strprn = json.loads(getfullurl.text)
+
+# <codecell>
+
+ssp = strprn['stars']
+
 
 # <codecell>
 
@@ -386,9 +398,15 @@ for n in feeding.keys():
 
 # <codecell>
 
+fstar = ssp[0]
 
 # <codecell>
 
+cstart = fstar()
+
+# <codecell>
+
+fstar
 
 # <codecell>
 
