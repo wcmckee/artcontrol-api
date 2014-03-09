@@ -34,7 +34,7 @@
 
 # <codecell>
 
-cusname = 'williamcliffordmckee'
+cusname = 'williamcliffordmckeewww'
 
 # <codecell>
 
@@ -102,7 +102,7 @@ for num in salelist:
 
 # <codecell>
 
-productname = 'walter whites: ble meth'
+productname = 'wwwalter whites: ble meth'
 
 # <codecell>
 
@@ -119,6 +119,18 @@ chrinpro = len(productname)
 # <codecell>
 
 set(litpro) & set(listcus)
+
+# <codecell>
+
+numbsli = [i for i, j in zip(litpro, listcus) if i == j]
+
+# <codecell>
+
+numbsli
+
+# <codecell>
+
+set(litpro).intersection(listcus)
 
 # <codecell>
 
@@ -165,6 +177,7 @@ for n in letiname:
     
 
 # <codecell>
+
 
 if "x" in dog:
     print "Yes!"
