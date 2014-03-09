@@ -34,11 +34,11 @@
 
 # <codecell>
 
-cusname = 'patches moodley'
+cusname = 'azxicvaabnm'
 
 # <codecell>
 
-productname = 'dog biskets'
+productname = 'aaqwertiy'
 
 # <codecell>
 
@@ -85,26 +85,11 @@ print fincus
 
 # <codecell>
 
-import string
-
-# <codecell>
-
-
-string.lowercase
-
-# <codecell>
-
 thenum = 0 
 
 # <codecell>
 
 print salelist
-
-# <codecell>
-
-
-# <codecell>
-
 
 # <codecell>
 
@@ -162,10 +147,35 @@ dictcol = dict(cuscol)
 
 # <codecell>
 
-available = set(doctpro.keys())
-satchel = set(dictcol.keys())
+available = set(doctpro.items())
+satchel = set(dictcol.items())
 
-print available.difference(satchel)
+
+findif = available.difference(satchel)
+
+# <codecell>
+
+finval = dictcol.values()
+
+# <codecell>
+
+print finval
+
+# <codecell>
+
+z = 1
+
+# <codecell>
+
+for z in finval:
+    if z in finval:
+        print z, ' is here!'
+    else:
+        print '2 is not here!'
+
+# <codecell>
+
+dict(findif)
 
 # <codecell>
 
@@ -194,4 +204,7 @@ for n in letiname:
         print thenum + 1
         print cusname
     
+
+# <codecell>
+
 
