@@ -38,6 +38,25 @@ cusname = 'williamcliffordmckeewww'
 
 # <codecell>
 
+productname = 'wwwalter whites: ble meth'
+
+# <codecell>
+
+chrinpro = len(productname)
+
+# <codecell>
+
+print chrinpro
+
+# <codecell>
+
+if (chrinpro % 2 == 0):
+    print 'true'
+else:
+    print 'false'
+
+# <codecell>
+
 letiname = ['a', 'e', 'i', 'o', 'u', 'y']
 
 # <codecell>
@@ -63,7 +82,7 @@ string.lowercase
 
 # <codecell>
 
-7tthenum = 0 
+thenum = 0 
 
 # <codecell>
 
@@ -102,19 +121,11 @@ for num in salelist:
 
 # <codecell>
 
-productname = 'wwwalter whites: ble meth'
-
-# <codecell>
-
 litpro = list(productname)
 
 # <codecell>
 
 listcus = list(cusname)
-
-# <codecell>
-
-chrinpro = len(productname)
 
 # <codecell>
 
@@ -134,14 +145,41 @@ set(litpro).intersection(listcus)
 
 # <codecell>
 
-print chrinpro
+import collections
 
 # <codecell>
 
-if (chrinpro % 2 == 0):
-    print 'true'
-else:
-    print 'false'
+procol = collections.Counter(litpro)
+
+# <codecell>
+
+cuscol = collections.Counter(listcus)
+
+# <codecell>
+
+print procol
+print cuscol
+
+# <codecell>
+
+diff = set(procol.keys()) - set(cuscol.keys())
+
+# <codecell>
+
+print diff
+
+# <codecell>
+
+numkey = 0
+
+# <codecell>
+
+for key in cuscol.keys():
+    if not key in procol:
+        print (key, numkey + 1)
+
+# <codecell>
+
 
 # <codecell>
 
