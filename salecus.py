@@ -38,19 +38,29 @@ import collections
 
 # <codecell>
 
-#cusname = 'figlet holley'
+newfile = open('config', 'w')
 
 # <codecell>
 
-cusname = raw_input('Customer name: ')
+#cusname1 = 'figlet holley'
 
 # <codecell>
 
-#productname = 'figlets food yum'
+datlist = []
 
 # <codecell>
 
-productname = raw_input('Product name: ')
+cusname = 'figlet mckee'
+datlist.append(cusname)
+
+# <codecell>
+
+productname1 = 'figlets food yum'
+
+# <codecell>
+
+productname = 'debian linux'
+datlist.append(productname)
 
 # <codecell>
 
@@ -60,6 +70,7 @@ salelist = []
 # <codecell>
 
 chrinpro = len(productname)
+datlist.append(chrinpro)
 
 # <codecell>
 
@@ -87,15 +98,22 @@ for extension in letiname:
         #print(extension, cunum +1)
         #salelist.append(extension)
         salelist.append(cunum +1)
+        datlist.append(extension)
         #print saledict
 
 # <codecell>
 
+print datlist
+
+# <codecell>
+
 cusa = sum(salelist)
+datlist.append(cusa)
 
 # <codecell>
 
 fincus = cusa * multi
+datlist.append(fincus)
 
 # <codecell>
 
@@ -132,6 +150,10 @@ numbsli = [i for i, j in zip(litpro, listcus) if i == j]
 
 # <codecell>
 
+datlist.append(numbsli)
+
+# <codecell>
+
 #numbsli
 
 # <codecell>
@@ -149,7 +171,9 @@ cuscol = collections.Counter(listcus)
 # <codecell>
 
 #print procol
+datlist.append(procol)
 #print cuscol
+datlist.append(cuscol)
 
 # <codecell>
 
@@ -166,6 +190,7 @@ satchel = set(dictcol.items())
 
 
 findif = available.difference(satchel)
+datlist.append(findif)
 
 # <codecell>
 
@@ -178,11 +203,13 @@ finval = dictcol.values()
 # <codecell>
 
 #print finval
+datlist.append(finval)
 
 # <codecell>
 
 fint1 = [x for x in finval if x != 1]
 #print fint1
+datlist.append(fint1)
 
 # <codecell>
 
@@ -199,10 +226,15 @@ finalcus = "%.2f" % fincus
 
 # <codecell>
 
+datlist.append(finalcus)
+
+# <codecell>
+
 print ('The score is:', finalcus)
 
 # <codecell>
 
+print datlist
 
 # <codecell>
 
