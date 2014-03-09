@@ -63,7 +63,7 @@ string.lowercase
 
 # <codecell>
 
-thenum = 0 
+7tthenum = 0 
 
 # <codecell>
 
@@ -106,7 +106,19 @@ productname = 'walter whites: ble meth'
 
 # <codecell>
 
+litpro = list(productname)
+
+# <codecell>
+
+listcus = list(cusname)
+
+# <codecell>
+
 chrinpro = len(productname)
+
+# <codecell>
+
+set(litpro) & set(listcus)
 
 # <codecell>
 
