@@ -38,14 +38,19 @@ import collections
 
 # <codecell>
 
-cusname = 'figlet holley'
+#cusname = 'figlet holley'
 
 # <codecell>
 
-productname = 'figlets food yum'
+cusname = raw_input('Customer name: ')
 
 # <codecell>
 
+#productname = 'figlets food yum'
+
+# <codecell>
+
+productname = raw_input('Product name: ')
 
 # <codecell>
 
@@ -79,7 +84,7 @@ else:
 
 for extension in letiname:
     if extension in cusname:
-        print(extension, cunum +1)
+        #print(extension, cunum +1)
         #salelist.append(extension)
         salelist.append(cunum +1)
         #print saledict
@@ -102,7 +107,7 @@ thenum = 0
 
 # <codecell>
 
-print salelist
+#print salelist
 
 # <codecell>
 
@@ -182,15 +187,22 @@ fint1 = [x for x in finval if x != 1]
 # <codecell>
 
 if fint1:
-    print 'list has elements'
+    #print 'list has elements'
     fincus = fincus * 1.5
 else:
-    print 'list is empty'
+    fincus = fincus
     
 
 # <codecell>
 
-print ('The score is:', fincus)
+finalcus = "%.2f" % fincus
+
+# <codecell>
+
+print ('The score is:', finalcus)
+
+# <codecell>
+
 
 # <codecell>
 
