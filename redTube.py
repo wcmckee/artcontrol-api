@@ -70,7 +70,6 @@ print fulur
 # <codecell>
 
 getfullurl = requests.get(fullurlz)
-loazfullurl = json.loads(fullurlz)
 
 # <codecell>
 
@@ -118,6 +117,24 @@ print titlost
 
 # <codecell>
 
+strlost = str(titlost)
+
+# <codecell>
+
+savedoc = open('prnsav', 'w')
+
+# <codecell>
+
+savedoc.write(strlost)
+
+# <codecell>
+
+savedoc.close()
+
+# <codecell>
+
+opendoc = open('prnsav', 'r')
+opendoc.read()
 
 # <codecell>
 
@@ -139,9 +156,31 @@ print ngePrn
 # Compress down again - this time video. It's always a bit of a trial and error to figure out
 # navagating json objects, IPython is perfect for this. 
 
+# <codecell>
+
+prnkey = ngePrn.keys()
+
+# <codecell>
+
+print prnkey
+
+# <codecell>
+
+prnls = []
+
+# <codecell>
+
+for x in prnkey:
+    prnls.append(ngePrn[x])
+    print ngePrn[x]
+
 # <headingcell level=2>
 
 # Individual Data!
+
+# <codecell>
+
+print prnls
 
 # <markdowncell>
 
@@ -318,10 +357,30 @@ urlHub.entries[0]
 
 # <codecell>
 
+urlHub.keys()
 
 # <codecell>
 
-for daHub, da in enumerate([titlHub, linHub, pubHub, imgHub]):
+feeding = urlHub['feed']
+
+# <codecell>
+
+print feeding
+
+# <codecell>
+
+feeding.keys()
+
+# <codecell>
+
+for n in feeding.keys():
+    #print n
+    for b in range(1):
+        print (b, feeding[n])
+
+# <codecell>
+
+|for daHub, da in enumerate([titlHub, linHub, pubHub, imgHub]):
     titlost.append(titHub)
     print daHub, da
 
