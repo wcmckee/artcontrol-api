@@ -34,11 +34,18 @@
 
 # <codecell>
 
-cusname = 'azxicvaabnm'
+import collections
 
 # <codecell>
 
-productname = 'aaqwertiy'
+cusname = 'figlet holley'
+
+# <codecell>
+
+productname = 'figlets food yum'
+
+# <codecell>
+
 
 # <codecell>
 
@@ -51,16 +58,22 @@ chrinpro = len(productname)
 
 # <codecell>
 
-print chrinpro
+#print chrinpro
 
 # <codecell>
 
 if (chrinpro % 2 == 0):
-    print 'true'
+    #print 'true'
     letiname = ['a', 'e', 'i', 'o', 'u', 'y']
+    multi = 1
 else:
-    print 'false'
+    #print 'false'
     letiname = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
+    multi = 1.5
+
+# <codecell>
+
+#print multi
 
 # <codecell>
 
@@ -77,11 +90,11 @@ cusa = sum(salelist)
 
 # <codecell>
 
-fincus = cusa * 1.5
+fincus = cusa * multi
 
 # <codecell>
 
-print fincus
+#print fincus
 
 # <codecell>
 
@@ -93,8 +106,8 @@ print salelist
 
 # <codecell>
 
-for num in salelist:
-    print num
+#for num in salelist:
+#    print num
 
 # <codecell>
 
@@ -106,7 +119,7 @@ listcus = list(cusname)
 
 # <codecell>
 
-set(litpro) & set(listcus)
+#set(litpro) & set(listcus)
 
 # <codecell>
 
@@ -114,15 +127,11 @@ numbsli = [i for i, j in zip(litpro, listcus) if i == j]
 
 # <codecell>
 
-numbsli
+#numbsli
 
 # <codecell>
 
 set(litpro).intersection(listcus)
-
-# <codecell>
-
-import collections
 
 # <codecell>
 
@@ -134,8 +143,8 @@ cuscol = collections.Counter(listcus)
 
 # <codecell>
 
-print procol
-print cuscol
+#print procol
+#print cuscol
 
 # <codecell>
 
@@ -155,55 +164,33 @@ findif = available.difference(satchel)
 
 # <codecell>
 
+#print findif
+
+# <codecell>
+
 finval = dictcol.values()
 
 # <codecell>
 
-print finval
+#print finval
 
 # <codecell>
 
-z = 1
+fint1 = [x for x in finval if x != 1]
+#print fint1
 
 # <codecell>
 
-for z in finval:
-    if z in finval:
-        print z, ' is here!'
-    else:
-        print '2 is not here!'
-
-# <codecell>
-
-dict(findif)
-
-# <codecell>
-
-diff = set(procol.keys()) - set(cuscol.keys())
-
-# <codecell>
-
-print diff
-
-# <codecell>
-
-numkey = 0
-
-# <codecell>
-
-for key in cuscol.keys():
-    if not key in procol:
-        print (key, numkey + 1)
-
-# <codecell>
-
-for n in letiname:
-    print n
-    if n in cusname:
-        print n
-        print thenum + 1
-        print cusname
+if fint1:
+    print 'list has elements'
+    fincus = fincus * 1.5
+else:
+    print 'list is empty'
     
+
+# <codecell>
+
+print ('The score is:', fincus)
 
 # <codecell>
 
