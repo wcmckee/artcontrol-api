@@ -99,16 +99,6 @@ g = makn(20)
 
 # <codecell>
 
-print f(42), g(51)
-
-# <codecell>
-
-nums = range(2, 50)
-for i in range(2, 8):
-    nums = filter(lambda x: x == i or x % i, nums)
-
-# <codecell>
-
 print nums
 
 # <codecell>
@@ -179,6 +169,32 @@ else:
 
 # <codecell>
 
+lempan = f(chrinpro), g(chrinpro)
+
+# <codecell>
+
+def lenz(inputz)):
+    for r in inputz:
+        return r
+
+# <codecell>
+
+lenz('blahblah')
+
+# <codecell>
+
+for i in lenz('blahblah'):
+    print i
+
+# <codecell>
+
+lempan
+
+# <codecell>
+
+
+# <codecell>
+
 for extension in letiname:
     if extension in cusname:
         #print(extension, cunum +1)
@@ -229,6 +245,17 @@ listcus = list(cusname)
 # <codecell>
 
 #set(litpro) & set(listcus)
+
+# <codecell>
+
+def numz(checkn):
+    [i for i, j in zip(litpro, listcus) if i == j]
+    return i + j
+    
+
+# <codecell>
+
+numz('gbdgggr')
 
 # <codecell>
 
@@ -324,12 +351,18 @@ print datlist[0]
 
 # <codecell>
 
+nums = findif
+for i in range(2, 8):
+    nums = filter(lambda x: x == i or x % i, nums)
+
+# <codecell>
+
 for n in datlist:
     print n
 
 # <codecell>
 
-nums = range(2, 50)
+nums = finalcus
 for i in range(2, 8):
     nums = filter(lambda x: x == i or x % i, nums)
 
@@ -361,6 +394,24 @@ print poin
 # <codecell>
 
 import commands
+
+# <codecell>
+
+import subprocess
+
+# <codecell>
+
+def checkout(ls):
+    return subprocess.check_output(ls)
+    
+
+# <codecell>
+
+checkout('ls')
+
+# <codecell>
+
+subprocess.check_output('ls')
 
 # <codecell>
 
