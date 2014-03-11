@@ -193,8 +193,22 @@ g = Github()
 
 # <codecell>
 
-for repo in g.get_user('wcmckee').get_repos():
-    print repo.name
+gitlist = []
+
+# <codecell>
+
+def gitusrz(gitn):
+    for repo in g.get_user(gitn).get_repos():
+        print repo.name
+        gitlist.append(repo.name)
+
+# <codecell>
+
+gitusrz('wcmckee')
+
+# <codecell>
+
+gitlist
 
 # <codecell>
 
@@ -217,10 +231,6 @@ for ls in lisdir:
 # <codecell>
 
 ls
-
-# <codecell>
-
-os.remove( 
 
 # <codecell>
 
