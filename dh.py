@@ -2556,6 +2556,12 @@ for lease in leaseDef.searchString(sample):
     print lease.ipaddress,'->',lease.hardware.mac
     lisbleh.append(lease.ipaddress)
     lisbleh.append(lease.hardware.mac)
+    lisbleh.append(lease.starts)
+    lisbleh.append(lease.ends)
+
+# <codecell>
+
+print 'hello world'
 
 # <codecell>
 
@@ -2563,9 +2569,13 @@ lisbleh
 
 # <codecell>
 
+dhpar = []
+
+# <codecell>
+
 #!/usr/bin/python3
 
-def split_ip(ip):
+def split_wsdip(ip):
     return tuple(int(part) for part in ip.split('.'))
 
 def ip_key(item):
@@ -2608,6 +2618,7 @@ def parse(fileName):
 
     #print output
     for k, v in sorted(output.items(), key=ip_key):
+        dhpar.append(v)
         print(v)
 
     # Close the file
@@ -2615,6 +2626,38 @@ def parse(fileName):
     
 #parse("/home/james/Source/LeaseInfo/dhcpd.leases")
 parse("dhcpd.leases")
+
+# <codecell>
+
+print dhpar
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+5 * 5
+
+# <codecell>
+
+13 - 5
+
+# <codecell>
+
+x = 21
+
+# <codecell>
+
+x - 5
 
 # <codecell>
 

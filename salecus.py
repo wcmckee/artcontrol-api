@@ -34,6 +34,87 @@
 
 # <codecell>
 
+def fib(n):
+    a,b = 0, 1
+    while b < n:
+        print b,
+        a, b = b, a+b
+
+# <codecell>
+
+fib(2000)
+
+# <codecell>
+
+def newf(z, x):
+    ul = []
+    return z, x
+    ul.append(z)
+    return uslist
+    
+
+# <codecell>
+
+def fib2(n):
+    result= []
+    a, b = 0, 1
+    while b < n:
+        result.append(b)
+        a, b = b, a+b
+    return result
+
+# <codecell>
+
+thefib = fib2(20000)
+
+# <codecell>
+
+def printinfo(name, age):
+   "This prints a passed info into this function"
+   print "Name: ", name;
+   print "Age ", age;
+   return;
+
+# <codecell>
+
+def f(x):
+    return x**2
+
+# <codecell>
+
+print f(6)
+
+# <codecell>
+
+g = lambda x: x**2
+
+# <codecell>
+
+print g(50)
+
+# <codecell>
+
+def makn(n): 
+    return lambda x: x + n
+
+# <codecell>
+
+f = makn(4)
+g = makn(20)
+
+# <codecell>
+
+print f(42), g(51)
+
+# <codecell>
+
+
+# <codecell>
+
+printinfo('william', 20)
+
+# <codecell>
+
 import collections
 
 # <codecell>
