@@ -38,8 +38,17 @@ nlist = []
 
 # <codecell>
 
+import random
+
+lowra = random.randint(0,5)
+highra = random.randint(10,20)
+
+nlist.append(lowra)
+
+# <codecell>
+
 def fib(n):
-    a,b = 0, 1
+    a,b = lowra, highra
     while b < n:
         print b, 
         sab = a, b = b, a+b
@@ -82,6 +91,9 @@ for blehz in nlist:
 
 # <codecell>
 
+
+# <codecell>
+
 fib(50)
 
 # <codecell>
@@ -104,31 +116,43 @@ thefib = fib2(20000)
 
 # <codecell>
 
+pi = math.pi
+
+# <codecell>
+
+
+# <codecell>
+
+import math
 
 # <codecell>
 
 def printinfo(name, age):
    "This prints a passed info into this function"
-   print "Name: ", name;
-   print "Age ", age;
+   print "hostname: ", name;
+   print "time left ", age;
    return;
 
 # <codecell>
 
 def f(x):
-    return x**2
+    return x**pi
 
 # <codecell>
 
-print f(6)
+print f(24)
 
 # <codecell>
 
-g = lambda x: x**2
+g = lambda x: x**pi
 
 # <codecell>
 
-print g(50)
+blehg =  g(80)
+
+# <codecell>
+
+print blehg
 
 # <codecell>
 
@@ -142,11 +166,12 @@ g = makn(20)
 
 # <codecell>
 
-print nums
+print f(2)
+print g(7)
 
 # <codecell>
 
-printinfo('william', 20)
+printinfo('william', 34)
 
 # <codecell>
 
@@ -174,7 +199,7 @@ datlist.append(cusname)
 
 # <codecell>
 
-productname1 = 'figlets food yum'
+productname1 = 'figlufets food yu'
 
 # <codecell>
 
@@ -194,6 +219,18 @@ datlist.append(chrinpro)
 # <codecell>
 
 #print chrinpro
+
+# <codecell>
+
+def chrinpa(letra):
+    if (chrinpro % 2 == 0):
+        print 'true'
+    else:
+        print 'false'
+
+# <codecell>
+
+chrinpa('blayyliuuiteylhertet')
 
 # <codecell>
 
