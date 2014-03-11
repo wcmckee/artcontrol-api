@@ -137,14 +137,6 @@ thehost
 
 # <codecell>
 
-socket.getaddrinfo()
-
-# <codecell>
-
-os.getlogin()
-
-# <codecell>
-
 import getpass
 
 # <codecell>
@@ -162,6 +154,77 @@ upass = theuser + '@' + thehost
 # <codecell>
 
 print upass
+
+# <codecell>
+
+os.defpath
+
+# <codecell>
+
+os.getresuid()
+
+# <codecell>
+
+os.curdir
+
+# <codecell>
+
+os.getppid()
+
+# <codecell>
+
+os.listdir('/home')
+
+# <codecell>
+
+os.times()
+
+# <codecell>
+
+os.ctermid()
+
+# <codecell>
+
+from github import Github
+
+# <codecell>
+
+g = Github()
+
+# <codecell>
+
+for repo in g.get_user('wcmckee').get_repos():
+    print repo.name
+
+# <codecell>
+
+for repo in g.get_user().get_repos():
+    print repo.name
+
+# <codecell>
+
+os.chdir('/home/drhealsgood/wcmckee/')
+
+# <codecell>
+
+lisdir = os.listdir('/home/drhealsgood/wcmckee/')
+
+# <codecell>
+
+for ls in lisdir:
+    print ls
+
+# <codecell>
+
+ls
+
+# <codecell>
+
+os.remove( 
+
+# <codecell>
+
+ls
 
 # <codecell>
 
