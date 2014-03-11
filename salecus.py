@@ -46,12 +46,7 @@ fib(2000)
 
 # <codecell>
 
-def newf(z, x):
-    ul = []
-    return z, x
-    ul.append(z)
-    return uslist
-    
+
 
 # <codecell>
 
@@ -108,10 +103,20 @@ print f(42), g(51)
 
 # <codecell>
 
+nums = range(2, 50)
+for i in range(2, 8):
+    nums = filter(lambda x: x == i or x % i, nums)
+
+# <codecell>
+
+print nums
 
 # <codecell>
 
 printinfo('william', 20)
+
+# <codecell>
+
 
 # <codecell>
 
@@ -315,7 +320,105 @@ print ('The score is:', finalcus)
 
 # <codecell>
 
-print datlist
+print datlist[0]
+
+# <codecell>
+
+for n in datlist:
+    print n
+
+# <codecell>
+
+nums = range(2, 50)
+for i in range(2, 8):
+    nums = filter(lambda x: x == i or x % i, nums)
+
+# <codecell>
+
+fstr = str(datlist)
+
+# <codecell>
+
+word = fstr.split()
+print word
+
+# <codecell>
+
+leng = map(lambda word: len(word), word)
+
+# <codecell>
+
+print leng
+
+# <codecell>
+
+poin = map(lambda w: len(w), fstr.split())
+
+# <codecell>
+
+print poin
+
+# <codecell>
+
+import commands
+
+# <codecell>
+
+mount = commands.getoutput('mount -v')
+
+# <codecell>
+
+lines = mount.splitlines()
+
+# <codecell>
+
+points = map(lambda line: line.split()[2], lines)
+
+# <codecell>
+
+print points
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
+
+# <codecell>
+
 
 # <codecell>
 
