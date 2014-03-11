@@ -129,7 +129,11 @@ import socket
 
 # <codecell>
 
-socket.gethostname()
+thehost = socket.gethostname()
+
+# <codecell>
+
+thehost
 
 # <codecell>
 
@@ -141,7 +145,23 @@ os.getlogin()
 
 # <codecell>
 
-os.
+import getpass
+
+# <codecell>
+
+theuser = getpass.getuser()
+
+# <codecell>
+
+print theuser
+
+# <codecell>
+
+upass = theuser + '@' + thehost
+
+# <codecell>
+
+print upass
 
 # <codecell>
 
