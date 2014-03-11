@@ -34,16 +34,19 @@
 
 # <codecell>
 
-nlist = []
+import math
+import random
 
 # <codecell>
-
-import random
 
 lowra = random.randint(0,5)
 highra = random.randint(10,20)
 
 nlist.append(lowra)
+
+# <codecell>
+
+nlist = []
 
 # <codecell>
 
@@ -120,10 +123,29 @@ pi = math.pi
 
 # <codecell>
 
+import sys
+import os
+import socket
 
 # <codecell>
 
-import math
+socket.gethostname()
+
+# <codecell>
+
+socket.getaddrinfo()
+
+# <codecell>
+
+os.getlogin()
+
+# <codecell>
+
+os.
+
+# <codecell>
+
+os.environ
 
 # <codecell>
 
@@ -205,6 +227,10 @@ productname1 = 'figlufets food yu'
 
 productname = 'debian linux'
 datlist.append(productname)
+
+# <codecell>
+
+set(datlist)
 
 # <codecell>
 
