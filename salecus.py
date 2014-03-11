@@ -37,16 +37,18 @@
 def fib(n):
     a,b = 0, 1
     while b < n:
-        print b,
+        print b, 
         a, b = b, a+b
 
 # <codecell>
 
-fib(2000)
+fib(20)
 
 # <codecell>
 
 
+for f in fib(2000):
+    print f
 
 # <codecell>
 
@@ -56,7 +58,6 @@ def fib2(n):
     while b < n:
         result.append(b)
         a, b = b, a+b
-    return result
 
 # <codecell>
 
