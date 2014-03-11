@@ -34,21 +34,60 @@
 
 # <codecell>
 
+nlist = []
+
+# <codecell>
+
 def fib(n):
     a,b = 0, 1
     while b < n:
         print b, 
-        a, b = b, a+b
+        sab = a, b = b, a+b
+        print sab
+        nlist.append(sab)
+        
 
 # <codecell>
 
-fib(20)
+chfib = fib(200)
 
 # <codecell>
 
+print nlist
 
-for f in fib(2000):
-    print f
+# <codecell>
+
+snlist = nlist.count(')')
+
+for sn in enumerate(nlist):
+    print sn
+
+# <codecell>
+
+print len(nlist)
+
+# <codecell>
+
+print len('blahblahlbah')
+
+# <codecell>
+
+print snlist
+print nlist
+
+# <codecell>
+
+for blehz in nlist:
+    print blehz
+
+# <codecell>
+
+fib(50)
+
+# <codecell>
+
+for f in chfib:
+    print chfib
 
 # <codecell>
 
@@ -62,6 +101,9 @@ def fib2(n):
 # <codecell>
 
 thefib = fib2(20000)
+
+# <codecell>
+
 
 # <codecell>
 
@@ -272,7 +314,21 @@ datlist.append(numbsli)
 
 # <codecell>
 
-set(litpro).intersection(listcus)
+chset = set(litpro).intersection(listcus)
+
+# <codecell>
+
+print chset
+
+# <codecell>
+
+for n in chset:
+    print n
+    datlist.append(n)
+
+# <codecell>
+
+print datlist
 
 # <codecell>
 
@@ -348,11 +404,15 @@ print ('The score is:', finalcus)
 
 # <codecell>
 
+print finalcus
+
+# <codecell>
+
 print datlist[0]
 
 # <codecell>
 
-nums = findif
+nums = finalcus
 for i in range(2, 8):
     nums = filter(lambda x: x == i or x % i, nums)
 
@@ -408,7 +468,7 @@ def checkout(ls):
 
 # <codecell>
 
-checkout('ls')
+checkout('mount -h')
 
 # <codecell>
 
