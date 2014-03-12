@@ -212,12 +212,20 @@ gitlist
 
 # <codecell>
 
-for repo in g.get_user().get_repos():
-    print repo.name
+os.chdir('/home/drhealsgood/wcmckee/')
 
 # <codecell>
 
-os.chdir('/home/drhealsgood/wcmckee/')
+
+# <codecell>
+
+ls
+
+# <codecell>
+
+import 
+
+git.Git().clone("https://github.com/wcmckee/4chan-API")
 
 # <codecell>
 
@@ -227,14 +235,6 @@ lisdir = os.listdir('/home/drhealsgood/wcmckee/')
 
 for ls in lisdir:
     print ls
-
-# <codecell>
-
-ls
-
-# <codecell>
-
-ls
 
 # <codecell>
 
