@@ -41,14 +41,14 @@ import random
 
 # <codecell>
 
+nlist = []
+
+# <codecell>
+
 lowra = random.randint(0,5)
 highra = random.randint(10,20)
 
 nlist.append(lowra)
-
-# <codecell>
-
-nlist = []
 
 # <codecell>
 
@@ -100,11 +100,6 @@ for blehz in nlist:
 # <codecell>
 
 fib(50)
-
-# <codecell>
-
-for f in chfib:
-    print chfib
 
 # <codecell>
 
@@ -211,6 +206,7 @@ gitusrz('wcmckee')
 # <codecell>
 
 import random
+import git
 
 # <codecell>
 
@@ -248,25 +244,11 @@ for gitre in gitlist:
 
 # <codecell>
 
-gitstr = ("https://github.com/" + gitusrz + '/' + gitr
-
-# <codecell>
-
-for ls in lisdir:
-    git.Git().clone('https://github.com
-
-# <codecell>
-
-git.Git().clone("https://github.com/wcmckee/4chan-API")
+git.Git().clone("https://github.com/wcmckee/xboxdrv")
 
 # <codecell>
 
 lisdir = os.listdir('/home/drhealsgood/wcmckee/')
-
-# <codecell>
-
-for ls in lisdir:
-    print ls
 
 # <codecell>
 
@@ -401,21 +383,6 @@ else:
 # <codecell>
 
 lempan = f(chrinpro), g(chrinpro)
-
-# <codecell>
-
-def lenz(inputz)):
-    for r in inputz:
-        return r
-
-# <codecell>
-
-lenz('blahblah')
-
-# <codecell>
-
-for i in lenz('blahblah'):
-    print i
 
 # <codecell>
 
