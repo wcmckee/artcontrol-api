@@ -42,13 +42,19 @@ import random
 # <codecell>
 
 nlist = []
+maslist = []
 
 # <codecell>
 
 lowra = random.randint(0,5)
 highra = random.randint(10,20)
-
+maslist.append(lowra)
+maslist.append(highra)
 nlist.append(lowra)
+
+# <codecell>
+
+maslist
 
 # <codecell>
 
@@ -63,7 +69,7 @@ def fib(n):
 
 # <codecell>
 
-chfib = fib(200)
+chfib = fib(lowra)
 
 # <codecell>
 
@@ -75,14 +81,20 @@ snlist = nlist.count(')')
 
 for sn in enumerate(nlist):
     print sn
+    maslist.append(sn)
 
 # <codecell>
 
 print len(nlist)
+maslist.append(len(nlist))
 
 # <codecell>
 
 print len('blahblahlbah')
+
+# <codecell>
+
+print maslist
 
 # <codecell>
 
@@ -130,11 +142,19 @@ thehost = socket.gethostname()
 
 # <codecell>
 
+maslist.append(thehost)
+
+# <codecell>
+
 thehost
 
 # <codecell>
 
 import getpass
+
+# <codecell>
+
+maslist.append(theuser)
 
 # <codecell>
 
@@ -158,7 +178,11 @@ os.defpath
 
 # <codecell>
 
-os.getresuid()
+maslist.append(upass)
+
+# <codecell>
+
+maslist.append(os.getresuid())
 
 # <codecell>
 
@@ -166,15 +190,15 @@ os.curdir
 
 # <codecell>
 
-os.getppid()
+maslist.append(os.getppid())
 
 # <codecell>
 
-os.listdir('/home')
+maslist.append(os.listdir('/home'))
 
 # <codecell>
 
-os.times()
+maslist.append(os.times())
 
 # <codecell>
 
