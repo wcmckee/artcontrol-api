@@ -268,11 +268,34 @@ for gitre in gitlist:
 
 # <codecell>
 
-git.Git().clone("https://github.com/wcmckee/xboxdrv")
+git.Git().clone("https://github.com/wcmckee/" + takn)
 
 # <codecell>
 
 lisdir = os.listdir('/home/drhealsgood/wcmckee/')
+
+# <codecell>
+
+ls
+
+# <codecell>
+
+set(lisdir) & set(gitlist)
+
+# <codecell>
+
+takegit =(set(lisdir).intersection(gitlist))
+
+# <codecell>
+
+for takn in takegit:
+    print takn
+    #git.Git().clone("https://github.com/wcmckee/" + takn)
+
+# <codecell>
+
+for listd in lisdir:
+    print list
 
 # <codecell>
 
