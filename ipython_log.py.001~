@@ -1,0 +1,9 @@
+# IPython log file
+
+get_ipython().show_usage()
+get_ipython().system(u'ls -F --color ')
+get_ipython().magic(u'cd wcmckee/')
+get_ipython().system(u'ls -F --color ')
+get_ipython().magic(u'cd artcontrol-api/')
+get_ipython().magic(u'logstart')
+import random

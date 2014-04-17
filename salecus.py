@@ -34,8 +34,6 @@
 
 # <codecell>
 
-
-
 import math
 import random
 
@@ -618,6 +616,15 @@ nums = finalcus
 for i in range(2, 8):
     nums = filter(lambda x: x == i or x % i, nums)
 
+# <headingcell level=3>
+
+# Im at Waikato Show!
+
 # <codecell>
 
+import requests
+
+# <codecell>
+
+waishow = 
 
