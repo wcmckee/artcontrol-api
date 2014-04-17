@@ -34,19 +34,27 @@
 
 # <codecell>
 
+
+
 import math
 import random
 
 # <codecell>
 
+nlist = []
+maslist = []
+
+# <codecell>
+
 lowra = random.randint(0,5)
 highra = random.randint(10,20)
-
+maslist.append(lowra)
+maslist.append(highra)
 nlist.append(lowra)
 
 # <codecell>
 
-nlist = []
+maslist
 
 # <codecell>
 
@@ -61,7 +69,7 @@ def fib(n):
 
 # <codecell>
 
-chfib = fib(200)
+chfib = fib(lowra)
 
 # <codecell>
 
@@ -73,14 +81,20 @@ snlist = nlist.count(')')
 
 for sn in enumerate(nlist):
     print sn
+    maslist.append(sn)
 
 # <codecell>
 
 print len(nlist)
+maslist.append(len(nlist))
 
 # <codecell>
 
 print len('blahblahlbah')
+
+# <codecell>
+
+print maslist
 
 # <codecell>
 
@@ -98,11 +112,6 @@ for blehz in nlist:
 # <codecell>
 
 fib(50)
-
-# <codecell>
-
-for f in chfib:
-    print chfib
 
 # <codecell>
 
@@ -133,11 +142,19 @@ thehost = socket.gethostname()
 
 # <codecell>
 
+maslist.append(thehost)
+
+# <codecell>
+
 thehost
 
 # <codecell>
 
 import getpass
+
+# <codecell>
+
+maslist.append(theuser)
 
 # <codecell>
 
@@ -161,7 +178,11 @@ os.defpath
 
 # <codecell>
 
-os.getresuid()
+maslist.append(upass)
+
+# <codecell>
+
+maslist.append(os.getresuid())
 
 # <codecell>
 
@@ -169,15 +190,15 @@ os.curdir
 
 # <codecell>
 
-os.getppid()
+maslist.append(os.getppid())
 
 # <codecell>
 
-os.listdir('/home')
+maslist.append(os.listdir('/home'))
 
 # <codecell>
 
-os.times()
+maslist.append(os.times())
 
 # <codecell>
 
@@ -208,12 +229,33 @@ gitusrz('wcmckee')
 
 # <codecell>
 
-gitlist
+import random
+import git
 
 # <codecell>
 
-for repo in g.get_user().get_repos():
-    print repo.name
+gitlstint = len(gitlist)
+
+# <codecell>
+
+print gitlstint
+
+# <codecell>
+
+gitrepoz = random.randint(0, gitlstint)
+
+# <codecell>
+
+fgitrepoz = gitlist[gitrepoz]
+
+# <codecell>
+
+
+print fgitrepoz
+
+# <codecell>
+
+gitlist
 
 # <codecell>
 
@@ -221,20 +263,39 @@ os.chdir('/home/drhealsgood/wcmckee/')
 
 # <codecell>
 
+for gitre in gitlist:
+    print gitre
+
+# <codecell>
+
+git.Git().clone("https://github.com/wcmckee/" + takn)
+
+# <codecell>
+
 lisdir = os.listdir('/home/drhealsgood/wcmckee/')
 
 # <codecell>
 
-for ls in lisdir:
-    print ls
-
-# <codecell>
-
 ls
 
 # <codecell>
 
-ls
+set(lisdir) & set(gitlist)
+
+# <codecell>
+
+takegit =(set(lisdir).intersection(gitlist))
+
+# <codecell>
+
+for takn in takegit:
+    print takn
+    #git.Git().clone("https://github.com/wcmckee/" + takn)
+
+# <codecell>
+
+for listd in lisdir:
+    print list
 
 # <codecell>
 
@@ -242,10 +303,10 @@ os.environ
 
 # <codecell>
 
-def printinfo(name, age):
+def printinfo(name, timel):
    "This prints a passed info into this function"
    print "hostname: ", name;
-   print "time left ", age;
+   print "time left ", timel;
    return;
 
 # <codecell>
@@ -309,7 +370,7 @@ datlist = []
 
 # <codecell>
 
-cusname = 'figlet mckee'
+cusname = fgitrepoz
 datlist.append(cusname)
 
 # <codecell>
@@ -369,21 +430,6 @@ else:
 # <codecell>
 
 lempan = f(chrinpro), g(chrinpro)
-
-# <codecell>
-
-def lenz(inputz)):
-    for r in inputz:
-        return r
-
-# <codecell>
-
-lenz('blahblah')
-
-# <codecell>
-
-for i in lenz('blahblah'):
-    print i
 
 # <codecell>
 
@@ -571,122 +617,6 @@ print datlist[0]
 nums = finalcus
 for i in range(2, 8):
     nums = filter(lambda x: x == i or x % i, nums)
-
-# <codecell>
-
-for n in datlist:
-    print n
-
-# <codecell>
-
-nums = finalcus
-for i in range(2, 8):
-    nums = filter(lambda x: x == i or x % i, nums)
-
-# <codecell>
-
-fstr = str(datlist)
-
-# <codecell>
-
-word = fstr.split()
-print word
-
-# <codecell>
-
-leng = map(lambda word: len(word), word)
-
-# <codecell>
-
-print leng
-
-# <codecell>
-
-poin = map(lambda w: len(w), fstr.split())
-
-# <codecell>
-
-print poin
-
-# <codecell>
-
-import commands
-
-# <codecell>
-
-import subprocess
-
-# <codecell>
-
-def checkout(ls):
-    return subprocess.check_output(ls)
-    
-
-# <codecell>
-
-checkout('mount -h')
-
-# <codecell>
-
-subprocess.check_output('ls')
-
-# <codecell>
-
-mount = commands.getoutput('mount -v')
-
-# <codecell>
-
-lines = mount.splitlines()
-
-# <codecell>
-
-points = map(lambda line: line.split()[2], lines)
-
-# <codecell>
-
-print points
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
-
-# <codecell>
-
 
 # <codecell>
 
