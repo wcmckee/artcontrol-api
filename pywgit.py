@@ -41,11 +41,11 @@ for repo in g.get_user(theuser).get_repos():
 
 # <codecell>
 
-os.chdir('/home/' + theuser)
+os.chdir('/home/' + theuser + '/github')
 
 # <codecell>
 
-lisdir = os.listdir('/home/wcmckee/')
+lisdir = os.listdir('/home/wcmckee/github')
 curlist = []
 for ls in lisdir:
     #print ls
@@ -73,7 +73,15 @@ for gi in gitlist:
 
 # <codecell>
 
+from clint.textui import colored
+
+# <codecell>
+
 for gitbl in dlrepo:
-        print ('Downloading - ' + theuser + " - "  + gitbl)
+        #print ('Downloading - ' + theuser + " - "  + gitbl)
+        print (colored.red('Downloading - ' + theuser + " - "  + gitbl))
         git.Git().clone("https://github.com/" + theuser + "/" + gitbl)
+
+# <codecell>
+
 
