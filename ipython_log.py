@@ -127,3 +127,256 @@ print fgitrepoz
 # Fri, 18 Apr 2014 10:57:13
 gitlist
 
+# Fri, 18 Apr 2014 11:13:47
+urdir = '/home/' + theuser + '/github/'
+# Fri, 18 Apr 2014 11:13:52
+print urdir
+# Fri, 18 Apr 2014 11:16:29
+for gitre in gitlist:
+    print gitre
+
+
+# Fri, 18 Apr 2014 11:16:42
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:16:46
+get_ipython().magic(u'cd ..')
+# Fri, 18 Apr 2014 11:16:48
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:16:50
+get_ipython().magic(u'cd ..')
+# Fri, 18 Apr 2014 11:16:51
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:16:54
+get_ipython().magic(u'cd github')
+# Fri, 18 Apr 2014 11:16:55
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:18:21
+giturl = ('https://github.com/' + theuser)
+# Fri, 18 Apr 2014 11:18:27
+print giturl
+# Fri, 18 Apr 2014 11:22:11
+lisdir = os.listdir(urdir)
+# Fri, 18 Apr 2014 11:22:14
+print lisdir
+# Fri, 18 Apr 2014 11:22:35
+set(lisdir) & set(gitlist)
+
+# Fri, 18 Apr 2014 11:22:40
+takegit =(set(lisdir).intersection(gitlist))
+
+# Fri, 18 Apr 2014 11:22:43
+for takn in takegit:
+    print takn
+    #git.Git().clone("https://github.com/wcmckee/" + takn)
+
+
+# Fri, 18 Apr 2014 11:22:58
+for listd in lisdir:
+    print listd
+
+
+# Fri, 18 Apr 2014 11:38:40
+
+gitrepoz = random.randint(0, gitlstint)
+
+fgitrepoz = gitlist[gitrepoz]
+
+print fgitrepoz
+
+gitlist
+
+urdir = '/home/' + theuser + '/Desktop/'
+print urdir
+for gitre in gitlist:
+    print gitre
+
+giturl = ('https://github.com/' + 'wcmckee' + '/Documents/')
+print giturl
+
+# Fri, 18 Apr 2014 11:39:02
+git.Git().clone("https://github.com/wcmckee/" + takn)
+# Fri, 18 Apr 2014 11:39:22
+takegit =(set(lisdir).intersection(gitlist))
+
+for takn in takegit:
+    print takn
+    git.Git().clone("https://github.com/wcmckee/" + takn)
+    
+# Fri, 18 Apr 2014 11:40:10
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 11:40:57
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 11:42:49
+git.Git().clone('https://github.com/wcmckee/BeOk')
+# Fri, 18 Apr 2014 11:43:18
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:47:31
+def gitclone(repoa):
+    return git.Git().clone("https://github.com/wcmckee" + repoa)
+# Fri, 18 Apr 2014 11:47:37
+get_ipython().magic(u'cd ..')
+# Fri, 18 Apr 2014 11:47:37
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:47:43
+get_ipython().system(u'mkdir github')
+# Fri, 18 Apr 2014 11:47:45
+get_ipython().magic(u'cd github')
+# Fri, 18 Apr 2014 11:47:46
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:48:55
+gitclone('BeOk')
+# Fri, 18 Apr 2014 11:49:19
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 11:49:41
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 11:50:56
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 11:51:12
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:51:14
+get_ipython().magic(u'cd ..')
+# Fri, 18 Apr 2014 11:51:14
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:51:17
+get_ipython().magic(u'cd github')
+# Fri, 18 Apr 2014 11:51:18
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:51:31
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:51:32
+get_ipython().magic(u'cd ..')
+# Fri, 18 Apr 2014 11:51:35
+get_ipython().magic(u'cd artcontrol-api/')
+# Fri, 18 Apr 2014 11:51:35
+get_ipython().system(u'ls -F --color ')
+# Fri, 18 Apr 2014 11:51:55
+gitclone('BeOk')
+# Fri, 18 Apr 2014 11:53:28
+"""
+Created on Fri Apr 18 11:24:16 2014
+
+@author: wcmckee
+"""
+
+from github import Github
+import sys
+import os
+import socket
+import getpass
+import random
+import git
+
+
+g = Github()
+
+gitlist = []
+
+def gitusrz(gitn):
+    for repo in g.get_user(gitn).get_repos():
+        print repo.name
+        gitlist.append(repo.name)
+
+
+
+thehost = socket.gethostname()
+
+theuser = getpass.getuser()
+
+print theuser
+
+upass = theuser + '@' + thehost
+
+print upass
+
+os.defpath
+
+os.curdir
+
+alusr = os.listdir("/home")
+
+
+g = Github()
+
+g = Github()
+
+gitlist = []
+
+def gitusrz(gitn):
+    for repo in g.get_user(gitn).get_repos():
+        print repo.name
+        gitlist.append(repo.name)
+
+
+
+locu = len(alusr)
+#print locu
+thus = random.randint(0,locu)
+#print thus
+fusr = alusr[thus]
+#print fusr
+gitusrz(fusr)
+gitlstint = len(gitlist)
+
+#print gitlstint
+
+gitrepoz = random.randint(0, gitlstint)
+
+fgitrepoz = gitlist[gitrepoz]
+
+print fgitrepoz
+
+#gitlist
+
+urdir = '/home/' + theuser + '/Desktop/'
+#print urdir
+for gitre in gitlist:
+    print gitre
+
+
+giturl = ('https://github.com/' + 'wcmckee' + '/Documents/')
+#print giturl
+lisdir = os.listdir(urdir)
+#print lisdir
+set(lisdir) & set(gitlist)
+
+takegit =(set(lisdir).intersection(gitlist))
+
+#for takn in takegit:
+   # print takn
+    #git.Git().clone("https://github.com/wcmckee/" + takn)
+
+def gitclone(repoa):
+    git.Git().clone("https://github.com/wcmckee/" + repoa)
+
+#for listd in lisdir:
+#    print listd
+# Fri, 18 Apr 2014 13:02:05
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:02:17
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:05:10
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:05:21
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:05:37
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:06:53
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:07:28
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:07:49
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:08:06
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:09:24
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:15:35
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:15:39
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:15:46
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:16:00
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 13:18:37
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
