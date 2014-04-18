@@ -1,5 +1,6 @@
 # IPython log file
 
+<<<<<<< HEAD
 runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
 runfile('/home/will/Desktop/artcontrol-api/redTube.py', wdir='/home/will/Desktop/artcontrol-api')
 import requests
@@ -588,3 +589,12 @@ runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/
 runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
 # Fri, 18 Apr 2014 17:32:23
 runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
+=======
+get_ipython()._run_cached_cell_magic(u'logstart', u'')
+get_ipython().magic(u'logstart')
+import random
+import os
+os.fork()
+ofor= s.ork)[
+fk= sfork
+>>>>>>> 218539d6cf8c29423957d4044197c428c7c41e75

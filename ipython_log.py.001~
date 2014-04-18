@@ -1,5 +1,6 @@
 # IPython log file
 
+<<<<<<< HEAD
 get_ipython().magic(u'logstart -t')
 get_ipython().magic(u'pwd ')
 get_ipython().system(u'ls -F --color ')
@@ -380,3 +381,12 @@ runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop
 runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
 # Fri, 18 Apr 2014 13:18:37
 runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+=======
+get_ipython().show_usage()
+get_ipython().system(u'ls -F --color ')
+get_ipython().magic(u'cd wcmckee/')
+get_ipython().system(u'ls -F --color ')
+get_ipython().magic(u'cd artcontrol-api/')
+get_ipython().magic(u'logstart')
+import random
+>>>>>>> 218539d6cf8c29423957d4044197c428c7c41e75
