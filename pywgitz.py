@@ -98,3 +98,4 @@ takegit =(set(lisdir).intersection(gitlist))
 def gitclone(repoa):
     git.Git().clone("https://github.com/wcmckee/" + repoa)
 #for listd in 
+    

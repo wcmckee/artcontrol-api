@@ -1,382 +1,590 @@
 # IPython log file
 
-get_ipython().magic(u'logstart -t')
-get_ipython().magic(u'pwd ')
-get_ipython().system(u'ls -F --color ')
-get_ipython().magic(u'cd Desktop/')
-get_ipython().system(u'ls -F --color ')
-get_ipython().magic(u'cd artcontrol-api/')
-get_ipython().system(u'ls -F --color ')
-get_ipython().magic(u'logstop')
-get_ipython().magic(u'logstart -t')
-# Fri, 18 Apr 2014 10:48:56
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 10:49:19
-from github import Github
-
-# Fri, 18 Apr 2014 10:49:23
-g = Github()
-
-# Fri, 18 Apr 2014 10:49:26
-gitlist = []
-
-# Fri, 18 Apr 2014 10:49:28
-def gitusrz(gitn):
-    for repo in g.get_user(gitn).get_repos():
-        print repo.name
-        gitlist.append(repo.name)
-
-
-# Fri, 18 Apr 2014 10:49:49
-import sys
-import os
-import socket
-
-# Fri, 18 Apr 2014 10:50:19
-thehost = socket.gethostname()
-
-# Fri, 18 Apr 2014 10:50:20
-maslist.append(thehost)
-
-# Fri, 18 Apr 2014 10:50:30
-thehost
-
-# Fri, 18 Apr 2014 10:50:36
-theuser = getpass.getuser()
-
-# Fri, 18 Apr 2014 10:50:39
-import getpass
-
-# Fri, 18 Apr 2014 10:50:42
-theuser = getpass.getuser()
-
-# Fri, 18 Apr 2014 10:50:43
-print theuser
-
-# Fri, 18 Apr 2014 10:50:46
-upass = theuser + '@' + thehost
-
-# Fri, 18 Apr 2014 10:50:49
-print upass
-
-# Fri, 18 Apr 2014 10:50:53
-os.defpath
-
-# Fri, 18 Apr 2014 10:50:58
-os.curdir
-
-# Fri, 18 Apr 2014 10:51:02
-maslist.append(os.listdir('/home'))
-
-# Fri, 18 Apr 2014 10:51:46
-alusr = os.listdir("/home")
-# Fri, 18 Apr 2014 10:51:53
-alusr
-# Fri, 18 Apr 2014 10:52:23
-from github import Github
-
-# Fri, 18 Apr 2014 10:52:24
-g = Github()
-
-# Fri, 18 Apr 2014 10:52:27
-g = Github()
-
-# Fri, 18 Apr 2014 10:52:29
-gitlist = []
-
-# Fri, 18 Apr 2014 10:52:32
-def gitusrz(gitn):
-    for repo in g.get_user(gitn).get_repos():
-        print repo.name
-        gitlist.append(repo.name)
-
-
-# Fri, 18 Apr 2014 10:52:45
+runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+runfile('/home/will/Desktop/artcontrol-api/redTube.py', wdir='/home/will/Desktop/artcontrol-api')
+import requests
+import json
 import random
-# Fri, 18 Apr 2014 10:53:16
-locu = len(alusr)
-# Fri, 18 Apr 2014 10:53:28
-print locu
-# Fri, 18 Apr 2014 10:54:10
-thus = random.randint(0,locu)
-# Fri, 18 Apr 2014 10:54:15
-print thus
-# Fri, 18 Apr 2014 10:54:47
-fusr = alusr[thus]
-# Fri, 18 Apr 2014 10:54:51
-print fusr
-# Fri, 18 Apr 2014 10:55:46
-gitusrz(fusr)
-# Fri, 18 Apr 2014 10:56:38
-import git
-# Fri, 18 Apr 2014 10:56:51
-gitlstint = len(gitlist)
+get_ipython().magic(u'logstate')
+get_ipython().magic(u'logstart -t')
+# Fri, 18 Apr 2014 13:54:25
+import requests
+import json
+import random
 
-# Fri, 18 Apr 2014 10:56:54
-print gitlstint
+# Fri, 18 Apr 2014 13:54:36
+redhtp = ('http://api.redtube.com/?data=redtube.')
+redtagz = ('tags.getTagList')
+redcat = ('Categories.getCategoriesList')
+redstar = ('Stars.getStarList') 
+redvid = ('Videos.searchVideos&page=1')
+redj = ('&output=json')
 
-# Fri, 18 Apr 2014 10:56:57
-gitrepoz = random.randint(0, gitlstint)
+# <markdowncell>
 
-# Fri, 18 Apr 2014 10:57:01
-fgitrepoz = gitlist[gitrepoz]
+# need to choose a random between tagz cat and star
 
-# Fri, 18 Apr 2014 10:57:04
-print fgitrepoz
+# Fri, 18 Apr 2014 13:54:42
+endlist = [redtagz, redcat, redstar]
 
-# Fri, 18 Apr 2014 10:57:13
-gitlist
+# Fri, 18 Apr 2014 13:54:47
+ranclist = random.choice(endlist)
 
-# Fri, 18 Apr 2014 11:13:47
-urdir = '/home/' + theuser + '/github/'
-# Fri, 18 Apr 2014 11:13:52
-print urdir
-# Fri, 18 Apr 2014 11:16:29
-for gitre in gitlist:
-    print gitre
+# Fri, 18 Apr 2014 13:54:51
+print endlist
 
+# Fri, 18 Apr 2014 13:55:02
+fullurlz = redhtp + ranclist + redj
 
-# Fri, 18 Apr 2014 11:16:42
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:16:46
-get_ipython().magic(u'cd ..')
-# Fri, 18 Apr 2014 11:16:48
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:16:50
-get_ipython().magic(u'cd ..')
-# Fri, 18 Apr 2014 11:16:51
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:16:54
-get_ipython().magic(u'cd github')
-# Fri, 18 Apr 2014 11:16:55
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:18:21
-giturl = ('https://github.com/' + theuser)
-# Fri, 18 Apr 2014 11:18:27
-print giturl
-# Fri, 18 Apr 2014 11:22:11
-lisdir = os.listdir(urdir)
-# Fri, 18 Apr 2014 11:22:14
-print lisdir
-# Fri, 18 Apr 2014 11:22:35
-set(lisdir) & set(gitlist)
+# Fri, 18 Apr 2014 13:55:06
+fulur = redhtp + redvid + redj
 
-# Fri, 18 Apr 2014 11:22:40
-takegit =(set(lisdir).intersection(gitlist))
+# Fri, 18 Apr 2014 13:55:08
+print fullurlz
 
-# Fri, 18 Apr 2014 11:22:43
-for takn in takegit:
-    print takn
-    #git.Git().clone("https://github.com/wcmckee/" + takn)
+# Fri, 18 Apr 2014 14:03:13
+fullurlz = ('http://api.redtube.com/?data=redtube.Videos.searchVideos&page=1&output=json') ('http://api.redtube.com/?data=redtube.')
+# Fri, 18 Apr 2014 14:03:33
+fullurlz = ('http://api.redtube.com/?data=redtube.Videos.searchVideos&page=1&output=json')
+# Fri, 18 Apr 2014 14:04:55
+print fullurlz
 
+# Fri, 18 Apr 2014 14:05:00
+getfullurl = requests.get(fullurlz)
 
-# Fri, 18 Apr 2014 11:22:58
-for listd in lisdir:
-    print listd
+# Fri, 18 Apr 2014 14:05:04
+strprn = json.loads(getfullurl.text)
 
+# Fri, 18 Apr 2014 14:07:00
+r"""JSON (JavaScript Object Notation) <http://json.org> is a subset of
+JavaScript syntax (ECMA-262 3rd edition) used as a lightweight data
+interchange format.
 
-# Fri, 18 Apr 2014 11:38:40
+:mod:`json` exposes an API familiar to users of the standard library
+:mod:`marshal` and :mod:`pickle` modules. It is the externally maintained
+version of the :mod:`json` library contained in Python 2.6, but maintains
+compatibility with Python 2.4 and Python 2.5 and (currently) has
+significant performance advantages, even without using the optional C
+extension for speedups.
 
-gitrepoz = random.randint(0, gitlstint)
-
-fgitrepoz = gitlist[gitrepoz]
-
-print fgitrepoz
-
-gitlist
-
-urdir = '/home/' + theuser + '/Desktop/'
-print urdir
-for gitre in gitlist:
-    print gitre
-
-giturl = ('https://github.com/' + 'wcmckee' + '/Documents/')
-print giturl
-
-# Fri, 18 Apr 2014 11:39:02
-git.Git().clone("https://github.com/wcmckee/" + takn)
-# Fri, 18 Apr 2014 11:39:22
-takegit =(set(lisdir).intersection(gitlist))
-
-for takn in takegit:
-    print takn
-    git.Git().clone("https://github.com/wcmckee/" + takn)
+Encoding basic Python object hierarchies::
     
-# Fri, 18 Apr 2014 11:40:10
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 11:40:57
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 11:42:49
-git.Git().clone('https://github.com/wcmckee/BeOk')
-# Fri, 18 Apr 2014 11:43:18
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:47:31
-def gitclone(repoa):
-    return git.Git().clone("https://github.com/wcmckee" + repoa)
-# Fri, 18 Apr 2014 11:47:37
-get_ipython().magic(u'cd ..')
-# Fri, 18 Apr 2014 11:47:37
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:47:43
-get_ipython().system(u'mkdir github')
-# Fri, 18 Apr 2014 11:47:45
-get_ipython().magic(u'cd github')
-# Fri, 18 Apr 2014 11:47:46
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:48:55
-gitclone('BeOk')
-# Fri, 18 Apr 2014 11:49:19
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 11:49:41
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 11:50:56
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 11:51:12
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:51:14
-get_ipython().magic(u'cd ..')
-# Fri, 18 Apr 2014 11:51:14
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:51:17
-get_ipython().magic(u'cd github')
-# Fri, 18 Apr 2014 11:51:18
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:51:31
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:51:32
-get_ipython().magic(u'cd ..')
-# Fri, 18 Apr 2014 11:51:35
-get_ipython().magic(u'cd artcontrol-api/')
-# Fri, 18 Apr 2014 11:51:35
-get_ipython().system(u'ls -F --color ')
-# Fri, 18 Apr 2014 11:51:55
-gitclone('BeOk')
-# Fri, 18 Apr 2014 11:53:28
+    >>> import json
+    >>> json.dumps(['foo', {'bar': ('baz', None, 1.0, 2)}])
+    '["foo", {"bar": ["baz", null, 1.0, 2]}]'
+    >>> print json.dumps("\"foo\bar")
+    "\"foo\bar"
+    >>> print json.dumps(u'\u1234')
+    "\u1234"
+    >>> print json.dumps('\\')
+    "\\"
+    >>> print json.dumps({"c": 0, "b": 0, "a": 0}, sort_keys=True)
+    {"a": 0, "b": 0, "c": 0}
+    >>> from StringIO import StringIO
+    >>> io = StringIO()
+    >>> json.dump(['streaming API'], io)
+    >>> io.getvalue()
+    '["streaming API"]'
+
+Compact encoding::
+    
+    >>> import json
+    >>> json.dumps([1,2,3,{'4': 5, '6': 7}], sort_keys=True, separators=(',',':'))
+    '[1,2,3,{"4":5,"6":7}]'
+
+Pretty printing::
+    
+    >>> import json
+    >>> print json.dumps({'4': 5, '6': 7}, sort_keys=True,
+                 indent=4, separators=(',', ': '))
+    {
+        "4": 5,
+        "6": 7
+    }
+
+Decoding JSON::
+    
+    >>> import json
+    >>> obj = [u'foo', {u'bar': [u'baz', None, 1.0, 2]}]
+    >>> json.loads('["foo", {"bar":["baz", null, 1.0, 2]}]') == obj
+    True
+    >>> json.loads('"\\"foo\\bar"') == u'"foo\x08ar'
+    True
+    >>> from StringIO import StringIO
+    >>> io = StringIO('["streaming API"]')
+    >>> json.load(io)[0] == 'streaming API'
+    True
+
+Specializing JSON object decoding::
+    
+    >>> import json
+    >>> def as_complex(dct):
+    if '__complex__' in dct:
+        return complex(dct['real'], dct['imag'])
+    ...     return dct
+    ...
+    >>> json.loads('{"__complex__": true, "real": 1, "imag": 2}',
+    object_hook=as_complex)
+    (1+2j)
+    >>> from decimal import Decimal
+    >>> json.loads('1.1', parse_float=Decimal) == Decimal('1.1')
+    True
+
+Specializing JSON object encoding::
+    
+    >>> import json
+    >>> def encode_complex(obj):
+    if isinstance(obj, complex):
+        return [obj.real, obj.imag]
+    ...     raise TypeError(repr(o) + " is not JSON serializable")
+    ...
+    >>> json.dumps(2 + 1j, default=encode_complex)
+    '[2.0, 1.0]'
+    >>> json.JSONEncoder(default=encode_complex).encode(2 + 1j)
+    '[2.0, 1.0]'
+    >>> ''.join(json.JSONEncoder(default=encode_complex).iterencode(2 + 1j))
+    '[2.0, 1.0]'
+
+
+Using json.tool from the shell to validate and pretty-print::
+    
+    $ echo '{"json":"obj"}' | python -m json.tool
+    {
+        "json": "obj"
+    }
+    $ echo '{ 1.2:3.4}' | python -m json.tool
+    Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
 """
-Created on Fri Apr 18 11:24:16 2014
+__version__ = '2.0.9'
+__all__ = [
+    'dump', 'dumps', 'load', 'loads',
+    'JSONDecoder', 'JSONEncoder',
+]
 
-@author: wcmckee
-"""
+__author__ = 'Bob Ippolito <bob@redivi.com>'
 
-from github import Github
-import sys
-import os
-import socket
-import getpass
-import random
-import git
+from .decoder import JSONDecoder
+from .encoder import JSONEncoder
+
+_default_encoder = JSONEncoder(
+    skipkeys=False,
+    ensure_ascii=True,
+    check_circular=True,
+    allow_nan=True,
+    indent=None,
+    separators=None,
+    encoding='utf-8',
+    default=None,
+)
+
+def dump(obj, fp, skipkeys=False, ensure_ascii=True, check_circular=True,
+        allow_nan=True, cls=None, indent=None, separators=None,
+        encoding='utf-8', default=None, sort_keys=False, **kw):
+    """Serialize ``obj`` as a JSON formatted stream to ``fp`` (a
+    ``.write()``-supporting file-like object).
+    
+    If ``skipkeys`` is true then ``dict`` keys that are not basic types
+    (``str``, ``unicode``, ``int``, ``long``, ``float``, ``bool``, ``None``)
+    will be skipped instead of raising a ``TypeError``.
+    
+    If ``ensure_ascii`` is true (the default), all non-ASCII characters in the
+    output are escaped with ``\uXXXX`` sequences, and the result is a ``str``
+    instance consisting of ASCII characters only.  If ``ensure_ascii`` is
+    ``False``, some chunks written to ``fp`` may be ``unicode`` instances.
+    This usually happens because the input contains unicode strings or the
+    ``encoding`` parameter is used. Unless ``fp.write()`` explicitly
+    understands ``unicode`` (as in ``codecs.getwriter``) this is likely to
+    cause an error.
+    
+    If ``check_circular`` is false, then the circular reference check
+    for container types will be skipped and a circular reference will
+    result in an ``OverflowError`` (or worse).
+    
+    If ``allow_nan`` is false, then it will be a ``ValueError`` to
+    serialize out of range ``float`` values (``nan``, ``inf``, ``-inf``)
+    in strict compliance of the JSON specification, instead of using the
+    JavaScript equivalents (``NaN``, ``Infinity``, ``-Infinity``).
+    
+    If ``indent`` is a non-negative integer, then JSON array elements and
+    object members will be pretty-printed with that indent level. An indent
+    level of 0 will only insert newlines. ``None`` is the most compact
+    representation.  Since the default item separator is ``', '``,  the
+    output might include trailing whitespace when ``indent`` is specified.
+    You can use ``separators=(',', ': ')`` to avoid this.
+    
+    If ``separators`` is an ``(item_separator, dict_separator)`` tuple
+    then it will be used instead of the default ``(', ', ': ')`` separators.
+    ``(',', ':')`` is the most compact JSON representation.
+    
+    ``encoding`` is the character encoding for str instances, default is UTF-8.
+    
+    ``default(obj)`` is a function that should return a serializable version
+    of obj or raise TypeError. The default simply raises TypeError.
+    
+    If *sort_keys* is ``True`` (default: ``False``), then the output of
+    dictionaries will be sorted by key.
+    
+    To use a custom ``JSONEncoder`` subclass (e.g. one that overrides the
+    ``.default()`` method to serialize additional types), specify it with
+    the ``cls`` kwarg; otherwise ``JSONEncoder`` is used.
+    
+    """
+    # cached encoder
+    if (not skipkeys and ensure_ascii and
+        check_circular and allow_nan and
+        cls is None and indent is None and separators is None and
+        encoding == 'utf-8' and default is None and not sort_keys and not kw):
+        iterable = _default_encoder.iterencode(obj)
+    else:
+        if cls is None:
+            cls = JSONEncoder
+        iterable = cls(skipkeys=skipkeys, ensure_ascii=ensure_ascii,
+            check_circular=check_circular, allow_nan=allow_nan, indent=indent,
+            separators=separators, encoding=encoding,
+            default=default, sort_keys=sort_keys, **kw).iterencode(obj)
+    # could accelerate with writelines in some versions of Python, at
+    # a debuggability cost
+    for chunk in iterable:
+        fp.write(chunk)
 
 
-g = Github()
 
-gitlist = []
-
-def gitusrz(gitn):
-    for repo in g.get_user(gitn).get_repos():
-        print repo.name
-        gitlist.append(repo.name)
-
-
-
-thehost = socket.gethostname()
-
-theuser = getpass.getuser()
-
-print theuser
-
-upass = theuser + '@' + thehost
-
-print upass
-
-os.defpath
-
-os.curdir
-
-alusr = os.listdir("/home")
-
-
-g = Github()
-
-g = Github()
-
-gitlist = []
-
-def gitusrz(gitn):
-    for repo in g.get_user(gitn).get_repos():
-        print repo.name
-        gitlist.append(repo.name)
-
-
-
-locu = len(alusr)
-#print locu
-thus = random.randint(0,locu)
-#print thus
-fusr = alusr[thus]
-#print fusr
-gitusrz(fusr)
-gitlstint = len(gitlist)
-
-#print gitlstint
-
-gitrepoz = random.randint(0, gitlstint)
-
-fgitrepoz = gitlist[gitrepoz]
-
-print fgitrepoz
-
-#gitlist
-
-urdir = '/home/' + theuser + '/Desktop/'
-#print urdir
-for gitre in gitlist:
-    print gitre
+def dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True,
+        allow_nan=True, cls=None, indent=None, separators=None,
+        encoding='utf-8', default=None, sort_keys=False, **kw):
+    """Serialize ``obj`` to a JSON formatted ``str``.
+    
+    If ``skipkeys`` is false then ``dict`` keys that are not basic types
+    (``str``, ``unicode``, ``int``, ``long``, ``float``, ``bool``, ``None``)
+    will be skipped instead of raising a ``TypeError``.
+    
+    If ``ensure_ascii`` is false, all non-ASCII characters are not escaped, and
+    the return value may be a ``unicode`` instance. See ``dump`` for details.
+    
+    If ``check_circular`` is false, then the circular reference check
+    for container types will be skipped and a circular reference will
+    result in an ``OverflowError`` (or worse).
+    
+    If ``allow_nan`` is false, then it will be a ``ValueError`` to
+    serialize out of range ``float`` values (``nan``, ``inf``, ``-inf``) in
+    strict compliance of the JSON specification, instead of using the
+    JavaScript equivalents (``NaN``, ``Infinity``, ``-Infinity``).
+    
+    If ``indent`` is a non-negative integer, then JSON array elements and
+    object members will be pretty-printed with that indent level. An indent
+    level of 0 will only insert newlines. ``None`` is the most compact
+    representation.  Since the default item separator is ``', '``,  the
+    output might include trailing whitespace when ``indent`` is specified.
+    You can use ``separators=(',', ': ')`` to avoid this.
+    
+    If ``separators`` is an ``(item_separator, dict_separator)`` tuple
+    then it will be used instead of the default ``(', ', ': ')`` separators.
+    ``(',', ':')`` is the most compact JSON representation.
+    
+    ``encoding`` is the character encoding for str instances, default is UTF-8.
+    
+    ``default(obj)`` is a function that should return a serializable version
+    of obj or raise TypeError. The default simply raises TypeError.
+    
+    If *sort_keys* is ``True`` (default: ``False``), then the output of
+    dictionaries will be sorted by key.
+    
+    To use a custom ``JSONEncoder`` subclass (e.g. one that overrides the
+    ``.default()`` method to serialize additional types), specify it with
+    the ``cls`` kwarg; otherwise ``JSONEncoder`` is used.
+    
+    """
+    # cached encoder
+    if (not skipkeys and ensure_ascii and
+        check_circular and allow_nan and
+        cls is None and indent is None and separators is None and
+        encoding == 'utf-8' and default is None and not sort_keys and not kw):
+        return _default_encoder.encode(obj)
+    if cls is None:
+        cls = JSONEncoder
+    return cls(
+        skipkeys=skipkeys, ensure_ascii=ensure_ascii,
+        check_circular=check_circular, allow_nan=allow_nan, indent=indent,
+        separators=separators, encoding=encoding, default=default,
+        sort_keys=sort_keys, **kw).encode(obj)
 
 
-giturl = ('https://github.com/' + 'wcmckee' + '/Documents/')
-#print giturl
-lisdir = os.listdir(urdir)
-#print lisdir
-set(lisdir) & set(gitlist)
 
-takegit =(set(lisdir).intersection(gitlist))
+_default_decoder = JSONDecoder(encoding=None, object_hook=None,
+                               object_pairs_hook=None)
 
-#for takn in takegit:
-   # print takn
-    #git.Git().clone("https://github.com/wcmckee/" + takn)
 
-def gitclone(repoa):
-    git.Git().clone("https://github.com/wcmckee/" + repoa)
+def load(fp, encoding=None, cls=None, object_hook=None, parse_float=None,
+        parse_int=None, parse_constant=None, object_pairs_hook=None, **kw):
+    """Deserialize ``fp`` (a ``.read()``-supporting file-like object containing
+    a JSON document) to a Python object.
+    
+    If the contents of ``fp`` is encoded with an ASCII based encoding other
+    than utf-8 (e.g. latin-1), then an appropriate ``encoding`` name must
+    be specified. Encodings that are not ASCII based (such as UCS-2) are
+    not allowed, and should be wrapped with
+    ``codecs.getreader(fp)(encoding)``, or simply decoded to a ``unicode``
+    object and passed to ``loads()``
+    
+    ``object_hook`` is an optional function that will be called with the
+    result of any object literal decode (a ``dict``). The return value of
+    ``object_hook`` will be used instead of the ``dict``. This feature
+    can be used to implement custom decoders (e.g. JSON-RPC class hinting).
+    
+    ``object_pairs_hook`` is an optional function that will be called with the
+    result of any object literal decoded with an ordered list of pairs.  The
+    return value of ``object_pairs_hook`` will be used instead of the ``dict``.
+    This feature can be used to implement custom decoders that rely on the
+    order that the key and value pairs are decoded (for example,
+    collections.OrderedDict will remember the order of insertion). If
+    ``object_hook`` is also defined, the ``object_pairs_hook`` takes priority.
+    
+    To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``
+    kwarg; otherwise ``JSONDecoder`` is used.
+    
+    """
+    return loads(fp.read(),
+        encoding=encoding, cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook,
+        **kw)
 
-#for listd in lisdir:
-#    print listd
-# Fri, 18 Apr 2014 13:02:05
+
+
+def loads(s, encoding=None, cls=None, object_hook=None, parse_float=None,
+        parse_int=None, parse_constant=None, object_pairs_hook=None, **kw):
+    """Deserialize ``s`` (a ``str`` or ``unicode`` instance containing a JSON
+    document) to a Python object.
+    
+    If ``s`` is a ``str`` instance and is encoded with an ASCII based encoding
+    other than utf-8 (e.g. latin-1) then an appropriate ``encoding`` name
+    must be specified. Encodings that are not ASCII based (such as UCS-2)
+    are not allowed and should be decoded to ``unicode`` first.
+    
+    ``object_hook`` is an optional function that will be called with the
+    result of any object literal decode (a ``dict``). The return value of
+    ``object_hook`` will be used instead of the ``dict``. This feature
+    can be used to implement custom decoders (e.g. JSON-RPC class hinting).
+    
+    ``object_pairs_hook`` is an optional function that will be called with the
+    result of any object literal decoded with an ordered list of pairs.  The
+    return value of ``object_pairs_hook`` will be used instead of the ``dict``.
+    This feature can be used to implement custom decoders that rely on the
+    order that the key and value pairs are decoded (for example,
+    collections.OrderedDict will remember the order of insertion). If
+    ``object_hook`` is also defined, the ``object_pairs_hook`` takes priority.
+    
+    ``parse_float``, if specified, will be called with the string
+    of every JSON float to be decoded. By default this is equivalent to
+    float(num_str). This can be used to use another datatype or parser
+    for JSON floats (e.g. decimal.Decimal).
+    
+    ``parse_int``, if specified, will be called with the string
+    of every JSON int to be decoded. By default this is equivalent to
+    int(num_str). This can be used to use another datatype or parser
+    for JSON integers (e.g. float).
+    
+    ``parse_constant``, if specified, will be called with one of the
+    following strings: -Infinity, Infinity, NaN, null, true, false.
+    This can be used to raise an exception if invalid JSON numbers
+    are encountered.
+    
+    To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``
+    kwarg; otherwise ``JSONDecoder`` is used.
+    
+    """
+    if (cls is None and encoding is None and object_hook is None and
+            parse_int is None and parse_float is None and
+            parse_constant is None and object_pairs_hook is None and not kw):
+        return _default_decoder.decode(s)
+    if cls is None:
+        cls = JSONDecoder
+    if object_hook is not None:
+        kw['object_hook'] = object_hook
+    if object_pairs_hook is not None:
+        kw['object_pairs_hook'] = object_pairs_hook
+    if parse_float is not None:
+        kw['parse_float'] = parse_float
+    if parse_int is not None:
+        kw['parse_int'] = parse_int
+    if parse_constant is not None:
+        kw['parse_constant'] = parse_constant
+    return cls(encoding=encoding, **kw).decode(s)
+
+# Fri, 18 Apr 2014 14:07:14
+getfullurl = requests.get(fullurlz)
+
+# Fri, 18 Apr 2014 14:07:18
+strprn = json.loads(getfullurl.text)
+
+# Fri, 18 Apr 2014 14:07:32
+loaPrn = json.loads(strprn.text)
+print loaPrn
+
+# <markdowncell>
+
+# Convert it into readable text that you can work with
+
+# Fri, 18 Apr 2014 14:07:32
+for feed in loaPrn[u'videos']:
+    print feed
+    #for entry in feed[u'video']:
+        #print entry
+
+
+# Fri, 18 Apr 2014 14:07:44
+loaPrn = json.loads(strprn.text)
+print loaPrn
+
+# <markdowncell>
+
+# Convert it into readable text that you can work with
+
+# Fri, 18 Apr 2014 14:07:49
+loaPrn = json.loads(strprn.text)
+print loaPrn
+
+# <markdowncell>
+
+# Convert it into readable text that you can work with
+
+# Fri, 18 Apr 2014 14:08:01
+loaPrn = json.loads(strprn)
+print loaPrn
+
+# <markdowncell>
+
+# Convert it into readable text that you can work with
+
+# Fri, 18 Apr 2014 14:08:04
+loaPrn = json.loads(strprn)
+print loaPrn
+
+# <markdowncell>
+
+# Convert it into readable text that you can work with
+
+# Fri, 18 Apr 2014 14:08:06
+loaPrn = json.loads(strprn)
+print loaPrn
+
+# <markdowncell>
+
+# Convert it into readable text that you can work with
+
+# Fri, 18 Apr 2014 14:08:16
+loaPrn = json.load(strprn)
+print loaPrn
+
+# <markdowncell>
+
+# Convert it into readable text that you can work with
+
+# Fri, 18 Apr 2014 14:08:33
+for feed in loaPrn[u'videos']:
+    print feed
+    #for entry in feed[u'video']:
+        #print entry
+
+
+# Fri, 18 Apr 2014 14:08:53
+titlost = []
+
+# Fri, 18 Apr 2014 14:08:57
+for nums in range(20):
+    naoPrn = loaPrn[u'videos'][nums]
+    #print naoPrn
+    
+    ngePrn = naoPrn[u'video']
+    #print ngePrn
+    urlPrn = ngePrn[u'title']
+    titlost.append(urlPrn)
+    print urlPrn
+
+
+# Fri, 18 Apr 2014 14:09:19
+print titlost
+
+# Fri, 18 Apr 2014 14:11:47
+savedoc = open('prnsav', 'w')
+
+# Fri, 18 Apr 2014 14:11:51
+savedoc.write(strlost)
+
+# Fri, 18 Apr 2014 14:11:54
+savedoc.close()
+
+# Fri, 18 Apr 2014 14:11:57
+opendoc = open('prnsav', 'r')
+opendoc.read()
+
+# Fri, 18 Apr 2014 14:12:21
+prnkey = ngePrn.keys()
+
+# Fri, 18 Apr 2014 14:12:23
+print prnkey
+
+# Fri, 18 Apr 2014 14:12:34
+prnls = []
+
+# Fri, 18 Apr 2014 14:12:37
+for x in prnkey:
+    prnls.append(ngePrn[x])
+    print ngePrn[x]
+
+
+# <headingcell level=2>
+
+# Individual Data!
+
+# Fri, 18 Apr 2014 14:16:42
+ratPrn = ngePrn[u'title']
+
+# Fri, 18 Apr 2014 14:16:44
+for k in naoPrn:
+    print k
+
+
+# Fri, 18 Apr 2014 14:16:51
+thumPrn = ratPrn[u'thumb']
+
+# Fri, 18 Apr 2014 14:18:19
+print prnls
+# Fri, 18 Apr 2014 14:25:05
+for prnz in prnkey:
+    return ngePrn[prnz]
+# Fri, 18 Apr 2014 14:25:22
+for prnz in prnkey:
+    print ngePrn[prnz]
+# Fri, 18 Apr 2014 14:25:40
+print ngeprn
+# Fri, 18 Apr 2014 14:25:48
+print ngePrn
+# Fri, 18 Apr 2014 14:27:31
+print prnz
+# Fri, 18 Apr 2014 14:27:44
+print prnz[0,5]
+# Fri, 18 Apr 2014 14:27:48
+print prnz[5]
+# Fri, 18 Apr 2014 14:27:53
+print prnz[2]
+# Fri, 18 Apr 2014 14:27:58
+print prnz
+# Fri, 18 Apr 2014 16:09:54
 runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:02:17
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:05:10
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:05:21
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:05:37
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:06:53
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:07:28
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:07:49
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:08:06
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:09:24
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:15:35
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:15:39
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:15:46
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:16:00
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
-# Fri, 18 Apr 2014 13:18:37
-runfile('/home/will/Desktop/artcontrol-api/pywgitz.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 16:11:26
+runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 16:11:40
+runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 16:13:56
+runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 16:14:12
+runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 16:15:07
+runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 16:16:53
+runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 17:31:11
+runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')
+# Fri, 18 Apr 2014 17:32:23
+runfile('/home/will/Desktop/artcontrol-api/pyblen.py', wdir='/home/will/Desktop/artcontrol-api')

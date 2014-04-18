@@ -93,7 +93,7 @@ getPrn = requests.get(fulur)
 
 # <codecell>
 
-loaPrn = json.loads(getPrn.text)
+loaPrn = json.load(strprn)
 print loaPrn
 
 # <markdowncell>
@@ -210,10 +210,10 @@ for k in naoPrn:
 
 # <codecell>
 
-from PIL import Image
+#from PIL import Image
 
 # <codecell>
-'''
+
 im = Image.open('ratPrn')
 
 # <codecell>
@@ -253,7 +253,7 @@ print pdaPrn
 
 timPrn = ngePrn[u'duration']
 print timPrn
-
+code
 # <codecell>
 
 titPrn = ngePrn[u'title']
@@ -410,4 +410,3 @@ fstar
 
 # <codecell>
 
-'''
