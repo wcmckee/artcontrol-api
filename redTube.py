@@ -80,7 +80,7 @@ strprn = json.loads(getfullurl.text)
 
 # <codecell>
 
-ssp = strprn['stars']
+#ssp = strprn['stars']
 
 
 # <codecell>
@@ -213,7 +213,7 @@ for k in naoPrn:
 from PIL import Image
 
 # <codecell>
-
+'''
 im = Image.open('ratPrn')
 
 # <codecell>
@@ -392,9 +392,9 @@ for n in feeding.keys():
 
 # <codecell>
 
-|for daHub, da in enumerate([titlHub, linHub, pubHub, imgHub]):
-    titlost.append(titHub)
-    print daHub, da
+#for daHub, da in enumerate([titlHub, linHub, pubHub, imgHub]):
+#   titlost.append(titHub)
+#   print daHub, da
 
 # <codecell>
 
@@ -402,7 +402,7 @@ fstar = ssp[0]
 
 # <codecell>
 
-cstart = fstar()
+cstart = fstar()
 
 # <codecell>
 
@@ -410,4 +410,4 @@ fstar
 
 # <codecell>
 
-
+'''
