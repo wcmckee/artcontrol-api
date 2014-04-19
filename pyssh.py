@@ -33,6 +33,7 @@ mydrop = manager.get_all_droplets()
 
 # <codecell>
 
+mydrop.sort
 
 # <codecell>
 
@@ -55,6 +56,13 @@ events = dropo.get_events()
 for event in events:
     event.load()
     print event.percentage
+
+# <codecell>
+
+for meip in mydrop:
+    print meip.ip_address
+    print meip.status
+    print meip.image_id
 
 # <codecell>
 
@@ -81,8 +89,11 @@ for dr in mydrop:
     print dr.status
     droplis.append(dr.region_id)
     print dr.region_id
+    droplis.append(dr.ssh_key_ids)
+    droplis.append(dr.id)
     print dr.ssh_key_ids
     print dr.id
+    print dr.image_id
 
 # <codecell>
 
@@ -138,4 +149,48 @@ list(gimg)
 
 # <codecell>
 
+my_droplets = manager.get_all_droplets()
+for droplet in my_droplets:
+    print droplet
+
+# <codecell>
+
+droplet.client_id
+
+# <codecell>
+
+myderp = manager.get_all_regions()
+
+# <codecell>
+
+print myderp
+
+# <codecell>
+
+myderp
+
+# <codecell>
+
+for derp in myderp:
+    print derp
+    droplis.append(derp.name)
+    droplis.append(derp.id)
+    print derp.name
+    print derp.id
+
+# <codecell>
+
+print droplis
+
+# <codecell>
+
+dropserv = digitalocean.Droplet(client_id=digcli, api_key=apikey, name = 'uburub', region_id=5, image_id=3137635, size_id=66, backup_active=False)
+dropserv.create()
+
+# <codecell>
+
+for event in events:
+    event.load()
+    #Once it shows 100, droplet is up and running
+    print event.percentage
 
