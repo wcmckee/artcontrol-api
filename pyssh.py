@@ -9,22 +9,6 @@ import digitalocean
 
 # <codecell>
 
-os.chdir('/home/wcmckee/password')
-
-# <codecell>
-
-opdig = open('dig', 'r')
-
-# <codecell>
-
-opdig.read()
-
-# <codecell>
-
-list(opdig)
-
-# <codecell>
-
 digcli = ('a24a5636402aaf75d07b774d98591ea3')
 
 # <codecell>
@@ -33,7 +17,7 @@ print digcli
 
 # <codecell>
 
-apikey = ('3e5eb096244fd5e791283d372be9da9f')
+apikey = ('f9f6062ce8adfcf3f61ed7e4fbf948da')
 
 # <codecell>
 
@@ -86,10 +70,23 @@ dropo
 
 # <codecell>
 
+droplis = []
+
+# <codecell>
+
 for dr in mydrop:
     print dr.ip_address
+    droplis.append(dr.ip_address)
+    droplis.append(dr.status)
     print dr.status
+    droplis.append(dr.region_id)
     print dr.region_id
+    print dr.ssh_key_ids
+    print dr.id
+
+# <codecell>
+
+print droplis
 
 # <codecell>
 
