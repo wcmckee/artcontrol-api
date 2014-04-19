@@ -293,7 +293,7 @@ for takn in takegit:
 # <codecell>
 
 for listd in lisdir:
-    print list
+    print listd
 
 # <codecell>
 
