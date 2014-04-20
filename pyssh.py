@@ -17,7 +17,7 @@ print digcli
 
 # <codecell>
 
-apikey = ('f9f6062ce8adfcf3f61ed7e4fbf948da')
+apikey = ('9d4a1822e4aaf3a11f73012e5648ebd4')
 
 # <codecell>
 
@@ -59,10 +59,22 @@ for event in events:
 
 # <codecell>
 
+sshin = []
+
+# <codecell>
+
+for ipz in sshin:
+    print('wcmckee@' + ipz)
+
+# <codecell>
+
 for meip in mydrop:
     print meip.ip_address
+    sshin.append(meip.ip_address)
     print meip.status
     print meip.image_id
+    print meip.name
+    print meip.private_ip_address
 
 # <codecell>
 
@@ -193,4 +205,7 @@ for event in events:
     event.load()
     #Once it shows 100, droplet is up and running
     print event.percentage
+
+# <codecell>
+
 
