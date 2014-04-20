@@ -21,6 +21,9 @@ apikey = ('9d4a1822e4aaf3a11f73012e5648ebd4')
 
 # <codecell>
 
+
+# <codecell>
+
 print apikey
 
 # <codecell>
@@ -30,6 +33,65 @@ manager = digitalocean.Manager(client_id = digcli, api_key = apikey)
 # <codecell>
 
 mydrop = manager.get_all_droplets()
+
+# <codecell>
+
+myserv = manager.get_all_images()
+
+# <codecell>
+
+mybleh = manager.get_all_regions()
+
+# <codecell>
+
+mybez = manager.get_global_images()
+
+# <codecell>
+
+myhez = manager.get_all_sizes()
+
+# <codecell>
+
+hezdict = {}
+
+# <codecell>
+
+print hezdict
+
+# <codecell>
+
+for hez in myhez:
+    print hez.name
+    hezdict.update({'size': hez.name, 'cost hour': hez.cost_per_hour,
+                    'cost month': hez.cost_per_month, 'cpu': hez.cpu})
+    print hez.cost_per_hour
+    print hez.cost_per_month
+    print hez.cpu
+    print hez.disk
+    print hez.id
+    print hez.memory
+
+# <codecell>
+
+for ekk in mybez:
+    print ekk.name
+
+# <codecell>
+
+for bleh in mybleh:
+    print bleh.name
+    print bleh.id
+
+# <codecell>
+
+for imgz in myserv:
+    print imgz.name
+    print imgz.id
+    print imgz.distribution
+
+# <codecell>
+
+myserv
 
 # <codecell>
 
@@ -65,6 +127,22 @@ sshin = []
 
 for ipz in sshin:
     print('wcmckee@' + ipz)
+
+# <codecell>
+
+import subprocess
+
+# <codecell>
+
+conser = subprocess.check_output('ls')
+
+# <codecell>
+
+process = subprocess.Popen("ssh wcmckee@" + ipz + " ls", shell=True,
+    stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+output,stderr = process.communicate()
+status = process.poll()
+print output
 
 # <codecell>
 
