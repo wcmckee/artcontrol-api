@@ -1,6 +1,26 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
+# <headingcell level=2>
+
+# pywsshx
+
+# <markdowncell>
+
+# this is a python script to expand features on Digital Ocean.
+# since i have been busy with github clone repo python script i have became interested in deployment of servers. I hope some of the code here is useful for you.
+
+# <markdowncell>
+
+# TODO: 
+#     - sort out login. 
+#     - make functions/test
+#     - merge with other scripts. eg github.
+#     - make dict better
+# - config file. - specify
+# - terminal -commands
+# - 
+
 # <codecell>
 
 import os
@@ -283,6 +303,40 @@ for event in events:
     event.load()
     #Once it shows 100, droplet is up and running
     print event.percentage
+
+# <codecell>
+
+from dop.client import Client
+
+client = Client(digcli, apikey)
+
+# Print regions.
+regions = client.regions()
+for region in regions:
+    print(region.to_json())
+
+# Print sizes.
+sizes = client.sizes()
+for size in sizes:
+    print(size.to_json())
+
+# Print public global images.
+images = client.images()
+for image in images:
+    print(image.to_json())
+
+# Print your private images.
+#images = client.images(filter='my_images')
+#for image in images:
+#    print(image.to_json())
+
+# Create a droplet
+conf = {
+    'name': 'test',
+    'size': {'size_slug': '512MB'},
+    'image': {'image_slug': 'ubuntu-13-04-x64'},
+    'region': {'region_slug': 'nyc1'},
+}
 
 # <codecell>
 
