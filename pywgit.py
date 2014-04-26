@@ -53,6 +53,43 @@ searchpy = g.search_repositories('python')
 
 # <codecell>
 
+searchbleh = g.get_api_status()
+
+# <codecell>
+
+print searchbleh.status
+print searchbleh.last_modified
+
+# <codecell>
+
+searchpy.totalCount
+
+# <codecell>
+
+import geopy
+
+# <codecell>
+
+koapi = ('d2b321e45a2041f19551a3f3b223fce0')
+
+# <codecell>
+
+geoloc = geopy.geocoders.GoogleV3()
+
+# <codecell>
+
+address = geoloc.geocode('8 Margaret Street Levin')
+
+# <codecell>
+
+print address
+
+# <codecell>
+
+address.point
+
+# <codecell>
+
 for se in searchpy:
     print se.url
 
