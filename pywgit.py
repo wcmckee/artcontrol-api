@@ -22,6 +22,23 @@ import git
 
 theuser = getpass.getuser()
 
+# <markdowncell>
+
+# muliti support for user names - cycle through a list, user input, and get username from login. 
+
+# <codecell>
+
+usergen = ['ipython', 'wcmckee', 'drhealsgood', 'hamipy']
+
+# <codecell>
+
+userinput = raw_input('github username: ')
+
+# <codecell>
+
+for us in usergen:
+    print us
+
 # <codecell>
 
 g = Github()
@@ -32,12 +49,21 @@ gitlist = []
 
 # <codecell>
 
+searchpy = g.search_repositories('python')
+
+# <codecell>
+
+for se in searchpy:
+    print se.url
+
+# <codecell>
+
 for repo in g.get_user(theuser).get_repos():
     gitlist.append(repo.name)
 
 # <codecell>
 
-#gitlist
+os.mkdir('/home/wcmckee/github')
 
 # <codecell>
 
@@ -57,7 +83,10 @@ dlrepo = list(set(gitlist) - set(curlist))
 
 # <codecell>
 
-#print dlrepo
+print dlrepo
+
+# <codecell>
+
 
 # <codecell>
 
