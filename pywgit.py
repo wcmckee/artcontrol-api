@@ -36,12 +36,71 @@ userinput = raw_input('github username: ')
 
 # <codecell>
 
-for us in usergen:
+for us in usergen:d
     print us
 
 # <codecell>
 
 g = Github()
+
+# <codecell>
+
+import requests
+
+# <codecell>
+
+highgit = requests.get('https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/', auth=('williammckee', 'J3e6t8q5y2'))
+
+# <codecell>
+
+from requests.auth import HTTPBasicAuth
+
+theres = requests.get('https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/', auth=HTTPBasicAuth('williammckee', 'J3e6t8q5y2'))
+
+# <codecell>
+
+from requests.auth import HTTPDigestAuth
+url = 'https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/'
+workt = requests.get(url, auth=HTTPDigestAuth('williammckee', 'J3e6t8q5y2'))
+
+# <codecell>
+
+workt.text
+
+# <codecell>
+
+theres.text
+
+# <codecell>
+
+user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
+values = {'name' : 'Michael Foord',
+          'location' : 'Northampton',
+          'language' : 'Python' }
+headers = { 'User-Agent' : user_agent }
+
+# <codecell>
+
+highgit.text
+
+# <codecell>
+
+%%bash 
+curl -u wcmckee:J3e6t8q5y2 https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/
+
+# <codecell>
+
+%%bash
+curl -k -H "username: williammckee" -H "password: J3e6t8q5y2" -o linkz https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/
+
+
+# <codecell>
+
+opcon = open('linkz', 'r')
+
+# <codecell>
+
+opcon.read()
 
 # <codecell>
 
@@ -54,6 +113,50 @@ searchpy = g.search_repositories(theuser)
 # <codecell>
 
 typy = g.search_users(theuser)
+
+# <codecell>
+
+blehgit = g.search_repositories('reddit')
+
+# <rawcell>
+
+# oh man, what have i got happening here. This started with a way of downloading repos in bulk from a user and ive started to bring in more github module. Here I am searching repositories on github for reddit. 
+# What things could i get it to search for?
+# - list
+# - search your repos on global to find similar named ones.
+# - 
+
+# <codecell>
+
+repolis = []
+
+# <codecell>
+
+print repolis
+
+# <codecell>
+
+for bleh in blehgit:
+    repolis.append(bleh)
+    #print bleh.full_name
+
+# <markdowncell>
+
+# I'm having a problem with auth! Need to get myself loged in here. 
+# Needs better security for logging in. - SSH Key? - hash the password 
+
+# <markdowncell>
+
+# What to do with all the output i am geting from searching. appending it into a list. maybe turn to dict? Make a rest feed? 
+
+# <codecell>
+
+for blzgit in blehgit:
+    print blzgit.name
+
+# <codecell>
+
+print blehgit.totalCount
 
 # <codecell>
 
@@ -90,6 +193,23 @@ brorepo.totalCount()
 # <codecell>
 
 gepy.public_repos
+
+# <codecell>
+
+gepic = gepy.avatar_url
+
+# <codecell>
+
+gepic
+
+# <codecell>
+
+gepy.type
+
+# <codecell>
+
+from IPython.core.display import Image 
+Image(filename='test.png') 
 
 # <codecell>
 
