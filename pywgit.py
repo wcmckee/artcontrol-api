@@ -49,7 +49,74 @@ gitlist = []
 
 # <codecell>
 
-searchpy = g.search_repositories('python')
+searchpy = g.search_repositories(theuser)
+
+# <codecell>
+
+typy = g.search_users(theuser)
+
+# <codecell>
+
+print typy.totalCount
+
+# <codecell>
+
+print typy
+
+# <codecell>
+
+gepy = g.get_organization('brobeur')
+
+# <codecell>
+
+gepy.email
+
+# <codecell>
+
+gepy.blog
+
+# <codecell>
+
+gepy.url
+
+# <codecell>
+
+gepy.created_at
+
+# <codecell>
+
+brorepo.totalCount()
+
+# <codecell>
+
+gepy.public_repos
+
+# <codecell>
+
+gepy.raw_data
+
+# <codecell>
+
+print alrepo
+
+# <codecell>
+
+brorepo = gepy.get_repo('linux')
+
+# <codecell>
+
+brorepo.size
+
+# <codecell>
+
+gepy.get_public_members()
+
+# <codecell>
+
+
+# <codecell>
+
+gepy.location
 
 # <codecell>
 
