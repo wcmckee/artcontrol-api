@@ -127,12 +127,62 @@ dalist[0]
 import json
 
 #write the dictionary to a file
-outfile = open(filename, 'w')
-json.dump(someDictionary, outfile)
+outfile = open('linkz', 'w')
+json.dump(datadict, outfile)
 
 #read the data back in
-with open(filename) as infile:
+with open('linkz') as infile:
     newDictionary = json.load(infile)
+
+# <codecell>
+
+print key
+
+# <codecell>
+
+newDictionary
+
+# <codecell>
+
+newdicli = []
+
+# <codecell>
+
+newDictionary.items
+
+# <codecell>
+
+len(newDictionary)
+
+# <codecell>
+
+nthere = althere[u'tns:imageurl']
+
+# <codecell>
+
+nthere
+
+# <codecell>
+
+althere = campos[u'tns:camera']
+
+# <codecell>
+
+campos = newDictionary[u'tns:getCamerasResponse']
+
+# <codecell>
+
+newdi
+
+# <codecell>
+
+for key, items in newDictionary.iteritems():
+    print key, items
+    newdicli.append(items)
+
+# <codecell>
+
+newDictionary.values()
 
 # <codecell>
 
