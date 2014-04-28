@@ -224,6 +224,22 @@ bth = bthere[0]
 
 # <codecell>
 
+bthkey = bth.keys()
+
+# <codecell>
+
+sindat = []
+
+# <codecell>
+
+for kez in bthkey:
+    #print kez
+    print bth[kez]
+    sinddat.append(bth[kez])
+    
+
+# <codecell>
+
 bth[u'tns:id']
 
 # <codecell>
