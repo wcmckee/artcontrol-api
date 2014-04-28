@@ -36,7 +36,7 @@ userinput = raw_input('github username: ')
 
 # <codecell>
 
-for us in usergen:d
+for us in usergen:
     print us
 
 # <codecell>
@@ -100,6 +100,10 @@ opcon = open('linkz', 'r')
 
 # <codecell>
 
+data= opcon.read()
+
+# <codecell>
+
 import xmltodict
 
 # <codecell>
@@ -120,7 +124,7 @@ dalist = []
 
 # <codecell>
 
-dalist[0]
+dalist
 
 # <codecell>
 
@@ -140,6 +144,14 @@ print key
 
 # <codecell>
 
+import json
+
+# <codecell>
+
+dicttojson = json.dumps(newDictionary)
+
+# <codecell>
+
 newDictionary
 
 # <codecell>
@@ -156,11 +168,24 @@ len(newDictionary)
 
 # <codecell>
 
-nthere = althere[u'tns:imageurl']
+nthere = althere[0]
 
 # <codecell>
 
-nthere
+print nthere
+
+# <codecell>
+
+nthere.keys()
+
+# <codecell>
+
+for nth in nthere:
+    print nthere[nth]
+
+# <codecell>
+
+nthere[u'tns:id']
 
 # <codecell>
 
@@ -168,11 +193,19 @@ althere = campos[u'tns:camera']
 
 # <codecell>
 
+print althere()
+
+# <codecell>
+
 campos = newDictionary[u'tns:getCamerasResponse']
 
 # <codecell>
 
-newdi
+campos.items
+
+# <codecell>
+
+print 'hello world'
 
 # <codecell>
 
