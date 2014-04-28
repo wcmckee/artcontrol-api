@@ -11,6 +11,13 @@
 # It takes the login name (wcmckee in my case) and downloads the repos of github user (the system login name). It downloads it to the home dir. 
 # The program checks if you have local folders that are also on github. It will skip them from downloading from github. 
 
+# <markdowncell>
+
+# This notebook also contains a project using new zealand transport data - cameras from around the country. It is a xml file that is opened and converted to a python dict. It is also converted to a json object, for giggles. 
+# I am always working with for loops and lists in python and rarely with dict. This project was perfect to getting me back to using dict. There is no python module for nz transport data so i had to work from xml (json doesn't seem to be an option). I had never converted xml over to python dict so it was a great chance to give it a go.
+# During the process I felt I lost lots of work. Maybe it's because I'm working on a enourmous notebook.
+# I have problems with getting the xml file and reading it. NZ Transport requires a login to access the data. I couldn't figure out how to get this to work with requests, but managed to run bash and curl then just save the output to file (linkz). 
+
 # <codecell>
 
 from github import Github
@@ -204,7 +211,7 @@ bthere = althere[u'tns:camera']
 
 # <codecell>
 
-bthere[u'tns:imageUrl']
+bthere[0]
 
 # <codecell>
 
@@ -220,7 +227,15 @@ print neth
 
 # <codecell>
 
-bth = bthere[0]
+import random
+
+# <codecell>
+
+theimgz = random.randint(0,neth)
+
+# <codecell>
+
+bth = bthere[theimgz]
 
 # <codecell>
 
@@ -232,11 +247,56 @@ sindat = []
 
 # <codecell>
 
+sindat.index
+
+# <codecell>
+
 for kez in bthkey:
     #print kez
     print bth[kez]
-    sinddat.append(bth[kez])
+    sindat.append(bth[kez])
     
+
+# <codecell>
+
+for tram in sindat:
+    print tram[0]
+
+# <codecell>
+
+from IPython.display import Image
+
+# <codecell>
+
+myfil = requests.get(sindat[1])
+
+# <codecell>
+
+myfil.text
+
+# <codecell>
+
+i = Image(filename=sindat[1])
+
+# <codecell>
+
+sindat
+
+# <codecell>
+
+theaddrey = sindat[3]
+
+# <codecell>
+
+theend = sindat[8]
+
+# <codecell>
+
+fulladd = theaddrey + ' ' + theend
+
+# <codecell>
+
+fulladd
 
 # <codecell>
 
