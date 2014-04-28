@@ -176,6 +176,22 @@ len(althere)
 
 # <codecell>
 
+althere.keys()
+
+# <codecell>
+
+for alke in althere.keys():
+    print alke
+
+# <codecell>
+
+camgit = (althere(n'tns:camera')
+
+# <codecell>
+
+
+# <codecell>
+
 print 'hello world'
 
 # <codecell>
@@ -188,11 +204,38 @@ bthere = althere[u'tns:camera']
 
 # <codecell>
 
+bthere[u'tns:imageUrl']
+
+# <codecell>
+
+print bthere[0]
+
+# <codecell>
+
+neth = len(bthere)
+
+# <codecell>
+
+print neth
+
+# <codecell>
+
+bth = bthere[0]
+
+# <codecell>
+
+bth[u'tns:id']
+
+# <codecell>
+
+print bthere
+
+# <codecell>
+
 print len(bthere)
 
 # <codecell>
 
-bthere.
 
 # <codecell>
 
