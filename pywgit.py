@@ -168,15 +168,47 @@ len(newDictionary)
 
 # <codecell>
 
-nthere = althere[0]
+althere = newDictionary[u'tns:getCamerasResponse']
 
 # <codecell>
 
-print nthere
+len(althere)
 
 # <codecell>
 
-nthere.keys()
+print 'hello world'
+
+# <codecell>
+
+althere.keys()
+
+# <codecell>
+
+bthere = althere[u'tns:camera']
+
+# <codecell>
+
+print len(bthere)
+
+# <codecell>
+
+bthere.
+
+# <codecell>
+
+print bthere
+
+# <codecell>
+
+nthere = blthere[1]
+
+# <codecell>
+
+print blthere
+
+# <codecell>
+
+blthere.keys()
 
 # <codecell>
 
