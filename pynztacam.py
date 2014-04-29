@@ -157,11 +157,46 @@ import PIL
 
 # <codecell>
 
-from PIL import Image
+from PIL import Image, ImageFilter, ImageEnhance, ImageChops, ImageColor
+
+# <codecell>
+
+imx = Image.open('130.jpg')
+
+# <codecell>
+
 
 # <codecell>
 
 im = Image.open('121.jpg')
+
+# <codecell>
+
+imx.show()
+
+# <codecell>
+
+imresiz = imx.resize((512, 512))
+
+# <codecell>
+
+izresiz = im.resize((512, 512))
+
+# <codecell>
+
+izresiz.show()
+
+# <codecell>
+
+imresiz.show()
+
+# <codecell>
+
+im.size
+
+# <codecell>
+
+imx.size
 
 # <codecell>
 
@@ -179,14 +214,182 @@ otwo.show()
 
 # <codecell>
 
+iz = ImageEnhance.Contrast(im)
+
+# <codecell>
+
+iz.enhance(1.10).show()
+
+# <codecell>
+
 im.show()
 
 # <codecell>
 
-help('PIL')
+imz = ImageChops.difference(izresiz, imresiz)
+
+# <codecell>
+
+imz.show()
+
+# <codecell>
+
+inb = ImageChops.subtract(izresiz, imz)
+
+# <codecell>
+
+incv = ImageChops.darker(inb, izresiz)
+
+# <codecell>
+
+incv.show()
+
+# <codecell>
+
+incv.mode
+
+# <codecell>
+
+inzx = incv.getcolors(12)
+
+# <codecell>
+
+inzx.
+
+# <codecell>
+
+inb.show()
 
 # <codecell>
 
 %%bash
-curl -k -H "username: williammckee" -H "password: J3e6t8q5y2" -o linkz https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/
+curl -k -H "username: williammckee" -H "password: J3e6t8q5y2" -o linkz https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficConditions2/REST/FeedService/?wsdl
+
+# <codecell>
+
+%%bash
+curl -k -H "username: williammckee" -H "password: J3e6t8q5y2" -o linkz https://infoconnect1.highwayinfo.govt.nz/ic/jbi/VariableMessageSigns2/REST/FeedService/?wsdl
+
+# <codecell>
+
+opzli = open('linkz', 'r')
+
+# <codecell>
+
+opzli.read()
+
+# <codecell>
+
+import pylast
+
+# <codecell>
+
+password_hash = pylast.md5(passworz)
+network = pylast.LastFMNetwork(API_KEY, api_secret =
+API_SECRET, username=username, password_hash=password_hash)
+
+# <codecell>
+
+artLord = 'lorde'
+
+# <codecell>
+
+artist = network.get_artist(artLord)
+
+# <codecell>
+
+artist.get_bio_content()
+
+# <codecell>
+
+hercov = artist.get_cover_image()
+
+# <codecell>
+
+Image(filename=hercov)
+
+# <codecell>
+
+with open('lorde', 'wb') as handle:
+    response = requests.get(hercov, stream=True)
+
+    for block in response.iter_content(1024):
+        if not block:
+            break
+        handle.write(block)
+
+# <codecell>
+
+pwd
+
+# <codecell>
+
+artist.get_cover_image()
+
+# <codecell>
+
+Image(filename='lorde')
+
+# <codecell>
+
+artist.get_bio_content
+
+# <codecell>
+
+'''
+Created on 6/12/2012
+ 
+@author: Will
+'''
+import pylast
+import pprint
+#from subprocess import Popen
+
+password_hash = pylast.md5(passworz)
+ 
+network = pylast.LastFMNetwork(API_KEY, api_secret =
+API_SECRET, username=username, password_hash=password_hash)
+ 
+#arti = input("Enter the artist name: ")
+ 
+artLord = input('Artist: ')
+artist = network.get_artist(artLord)
+ 
+#album = network.get_album(artist)
+ 
+ 
+artBio = artist.get_bio_content()
+#pprint.pprint(artBio)
+#artSimilar = artist.get_similar(20)
+#artSimilar = str(artSimilar)
+#pprint.pprint(artSimilar)
+ 
+artImage = artist.get_cover_image(size=4)
+#pprint.pprint(artImage)
+#Popen(["firefox", artImage])
+ 
+#artDefulat = artist.get_top_albums()
+#artDefalat = str(artDefulat)
+#pprint.pprint(artDefulat)
+ 
+artPower = artist.get_bio_summary()
+artPower = str(artPower)
+#pprint.pprint(artPower)
+ 
+ 
+ 
+doc = open('LastData', 'w')
+doc.write('<h2><b>')
+doc.write(artLord)
+doc.write('</h2></b>')
+#doc.write(artBio)
+doc.write('Breaking News: ')
+#doc.write(artPower)
+doc.write(' - ')
+#doc.write(artDefalat)
+doc.write('<img class=\"aligncenter\" alt=\"\" src =\"')
+doc.write(artImage)
+doc.write('\" width=\"60\" height=\"30\" />')
+#doc.write(artSimilar)
+doc.close
 
