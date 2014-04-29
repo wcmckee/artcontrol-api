@@ -10,12 +10,6 @@
 
 # <codecell>
 
-%%bash
-curl -k -H "username: williammckee" -H "password: J3e6t8q5y2" -o linkz https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/
-
-
-# <codecell>
-
 import xmltodict
 
 # <codecell>
@@ -33,15 +27,20 @@ geoloc = geopy.geocoders.GoogleV3()
 
 # <codecell>
 
+import json
+
+#write the dictionary to a file
+outfile = open('linkz', 'w')
+json.dump(datadict, outfile)
+
+#read the data back in
+with open('linkz') as infile:
+    newDictionary = json.load(infile)
+
+# <codecell>
+
+althere = newDictionary[u'tns:getCamerasResponse']
 bthere = althere[u'tns:camera']
-
-# <codecell>
-
-print address
-
-# <codecell>
-
-print bthere[0]
 
 # <codecell>
 
@@ -113,6 +112,10 @@ print address
 
 # <codecell>
 
+address.raw
+
+# <codecell>
+
 import json
 
 #write the dictionary to a file
@@ -125,10 +128,6 @@ with open('linkz') as infile:
 
 # <codecell>
 
-althere = newDictionary[u'tns:getCamerasResponse']
-
-# <codecell>
-
 bthere[0]
 
 # <codecell>
@@ -138,10 +137,6 @@ import requests
 # <codecell>
 
 import os
-
-# <codecell>
-
-os.mkdir('/home/will/Desktop/highwaypiz')
 
 # <codecell>
 
