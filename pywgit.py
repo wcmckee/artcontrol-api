@@ -259,6 +259,37 @@ for kez in bthkey:
 
 # <codecell>
 
+jpgcam = sindat[1]
+numcam = sindat[0]
+
+jnacam = numcam + '.jpg'
+
+# <codecell>
+
+with open(jnacam, 'wb') as handle:
+    response = requests.get(jpgcam, stream=True)
+
+    for block in response.iter_content(1024):
+        if not block:
+            break
+        handle.write(block)
+
+# <headingcell level=2>
+
+# NZ TRANSPORT AGENCY
+
+# <codecell>
+
+from IPython.display import Image 
+    
+Image(filename=jnacam)
+
+# <codecell>
+
+ls
+
+# <codecell>
+
 for tram in sindat:
     print tram[0]
 
@@ -567,20 +598,20 @@ for se in searchpy:
 
 # <codecell>
 
-for repo in g.get_user(theuser).get_repos():
+for repo in g.get_user('wcmckee').get_repos():
     gitlist.append(repo.name)
 
 # <codecell>
 
-os.mkdir('/home/wcmckee/github')
+os.mkdir('/home/will/github')
 
 # <codecell>
 
-os.chdir('/home/' + theuser + '/github')
+os.chdir('/home/' + 'will' + '/github')
 
 # <codecell>
 
-lisdir = os.listdir('/home/wcmckee/github')
+lisdir = os.listdir('/home/will/github')
 curlist = []
 for ls in lisdir:
     #print ls
@@ -617,9 +648,10 @@ from clint.textui import colored
 
 for gitbl in dlrepo:
         #print ('Downloading - ' + theuser + " - "  + gitbl)
-        print (colored.red('Downloading - ' + theuser + " - "  + gitbl))
-        git.Git().clone("https://github.com/" + theuser + "/" + gitbl)
+        print (colored.red('Downloading - ' + 'wcmckee' + " - "  + gitbl))
+        git.Git().clone("https://github.com/" + 'wcmckee' + "/" + gitbl)
 
 # <codecell>
 
+u
 

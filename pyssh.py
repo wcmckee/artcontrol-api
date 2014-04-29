@@ -1,25 +1,13 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
-# <headingcell level=2>
+# <headingcell level=1>
 
-# pywsshx
-
-# <markdowncell>
-
-# this is a python script to expand features on Digital Ocean.
-# since i have been busy with github clone repo python script i have became interested in deployment of servers. I hope some of the code here is useful for you.
+# pydigdrop
 
 # <markdowncell>
 
-# TODO: 
-#     - sort out login. 
-#     - make functions/test
-#     - merge with other scripts. eg github.
-#     - make dict better
-# - config file. - specify
-# - terminal -commands
-# - 
+# This Python script uses digitalocean services.  It gets the users server list - from the vps hosting company Digital Ocean. Their plans start as little as $5.00 and are charged by the hour. 
 
 # <codecell>
 
@@ -37,10 +25,7 @@ print digcli
 
 # <codecell>
 
-apikey = ('9d4a1822e4aaf3a11f73012e5648ebd4')
-
-# <codecell>
-
+apikey = ('9898216d345df5b70ab943c5005c05df')
 
 # <codecell>
 
@@ -53,65 +38,6 @@ manager = digitalocean.Manager(client_id = digcli, api_key = apikey)
 # <codecell>
 
 mydrop = manager.get_all_droplets()
-
-# <codecell>
-
-myserv = manager.get_all_images()
-
-# <codecell>
-
-mybleh = manager.get_all_regions()
-
-# <codecell>
-
-mybez = manager.get_global_images()
-
-# <codecell>
-
-myhez = manager.get_all_sizes()
-
-# <codecell>
-
-hezdict = {}
-
-# <codecell>
-
-print hezdict
-
-# <codecell>
-
-for hez in myhez:
-    print hez.name
-    hezdict.update({'size': hez.name, 'cost hour': hez.cost_per_hour,
-                    'cost month': hez.cost_per_month, 'cpu': hez.cpu})
-    print hez.cost_per_hour
-    print hez.cost_per_month
-    print hez.cpu
-    print hez.disk
-    print hez.id
-    print hez.memory
-
-# <codecell>
-
-for ekk in mybez:
-    print ekk.name
-
-# <codecell>
-
-for bleh in mybleh:
-    print bleh.name
-    print bleh.id
-
-# <codecell>
-
-for imgz in myserv:
-    print imgz.name
-    print imgz.id
-    print imgz.distribution
-
-# <codecell>
-
-myserv
 
 # <codecell>
 
@@ -141,38 +67,10 @@ for event in events:
 
 # <codecell>
 
-sshin = []
-
-# <codecell>
-
-for ipz in sshin:
-    print('wcmckee@' + ipz)
-
-# <codecell>
-
-import subprocess
-
-# <codecell>
-
-conser = subprocess.check_output('ls')
-
-# <codecell>
-
-process = subprocess.Popen("ssh wcmckee@" + ipz + " ls", shell=True,
-    stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-output,stderr = process.communicate()
-status = process.poll()
-print output
-
-# <codecell>
-
 for meip in mydrop:
     print meip.ip_address
-    sshin.append(meip.ip_address)
     print meip.status
     print meip.image_id
-    print meip.name
-    print meip.private_ip_address
 
 # <codecell>
 
@@ -192,22 +90,83 @@ droplis = []
 
 # <codecell>
 
+iplis = []
+
+# <codecell>
+
+dropdict = dict{}
+
+# <codecell>
+
+drstr = []
+
+# <codecell>
+
 for dr in mydrop:
     print dr.ip_address
+    droplis.append(dr.name)
     droplis.append(dr.ip_address)
+    iplis.append(dr.ip_address)
     droplis.append(dr.status)
     print dr.status
     droplis.append(dr.region_id)
     print dr.region_id
     droplis.append(dr.ssh_key_ids)
     droplis.append(dr.id)
+    droplis.append(dr)
+    print dr.name
     print dr.ssh_key_ids
     print dr.id
     print dr.image_id
+    print dr
+    drstr.append(dr)
 
 # <codecell>
 
 print droplis
+
+# <codecell>
+
+print drstr
+
+# <codecell>
+
+print iplis
+
+# <codecell>
+
+#!/usr/bin/python
+ 
+# All SSH libraries for Python are junk (2011-10-13).
+# Too low-level (libssh2), too buggy (paramiko), too complicated
+# (both), too poor in features (no use of the agent, for instance)
+ 
+# Here is the right solution today:
+ 
+import subprocess
+import sys
+ 
+HOST= '74.50.51.32'
+# Ports are handled in ~/.ssh/config since we use OpenSSH
+COMMAND="uname -a"
+ 
+ssh = subprocess.Popen(["ssh", "%s" % HOST, COMMAND],
+shell=False,
+stdout=subprocess.PIPE,
+stderr=subprocess.PIPE)
+result = ssh.stdout.readlines()
+if result == []:
+    error = ssh.stderr.readlines()
+    print >>sys.stderr, "ERROR: %s" % error
+else:
+    print result
+
+# <codecell>
+
+from crontab import CronTab
+
+system_cron   = CronTab()
+system_cron.new
 
 # <codecell>
 
@@ -262,6 +221,31 @@ list(gimg)
 my_droplets = manager.get_all_droplets()
 for droplet in my_droplets:
     print droplet
+    droplet.power_off()
+
+# <codecell>
+
+for droplet in my_droplets:
+    print droplet
+    droplet.power_on()
+
+# <codecell>
+
+for droplet in my_droplets:
+    print droplet
+    print droplet.name
+
+# <codecell>
+
+dropo.power_off()
+
+# <codecell>
+
+dropo.take_snapshot('deb')
+
+# <codecell>
+
+dropo.rebuild()
 
 # <codecell>
 
@@ -303,41 +287,4 @@ for event in events:
     event.load()
     #Once it shows 100, droplet is up and running
     print event.percentage
-
-# <codecell>
-
-from dop.client import Client
-
-client = Client(digcli, apikey)
-
-# Print regions.
-regions = client.regions()
-for region in regions:
-    print(region.to_json())
-
-# Print sizes.
-sizes = client.sizes()
-for size in sizes:
-    print(size.to_json())
-
-# Print public global images.
-images = client.images()
-for image in images:
-    print(image.to_json())
-
-# Print your private images.
-#images = client.images(filter='my_images')
-#for image in images:
-#    print(image.to_json())
-
-# Create a droplet
-conf = {
-    'name': 'test',
-    'size': {'size_slug': '512MB'},
-    'image': {'image_slug': 'ubuntu-13-04-x64'},
-    'region': {'region_slug': 'nyc1'},
-}
-
-# <codecell>
-
 
