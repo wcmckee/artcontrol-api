@@ -7,6 +7,15 @@
 
 # <codecell>
 
+
+# <codecell>
+
+%%bash
+curl -k -H "username: williammckee" -H "password: J3e6t8q5y2" -o linkz https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/
+
+
+# <codecell>
+
 import xmltodict
 
 # <codecell>
@@ -19,7 +28,16 @@ datadict = xmltodict.parse(thexml)
 
 # <codecell>
 
+import geopy
+geoloc = geopy.geocoders.GoogleV3()
+
+# <codecell>
+
 bthere = althere[u'tns:camera']
+
+# <codecell>
+
+print address
 
 # <codecell>
 
@@ -63,10 +81,35 @@ for kez in bthkey:
 
 # <codecell>
 
+topz = stad[0]
+
+# <codecell>
+
+snam = topz[0]
+
+# <codecell>
+
 jpgcam = sindat[1]
 numcam = sindat[0]
+addyo = sindat[3]
+addyi = sindat[8]
+stad = sindat[7]
 
+faddy = snam + ' ' + addyi + ' new zealand'
 jnacam = numcam + '.jpg'
+print faddy
+
+# <codecell>
+
+stad[0]
+
+# <codecell>
+
+address = geoloc.geocode(faddy)
+
+# <codecell>
+
+print address
 
 # <codecell>
 
@@ -91,6 +134,18 @@ bthere[0]
 # <codecell>
 
 import requests
+
+# <codecell>
+
+import os
+
+# <codecell>
+
+os.mkdir('/home/will/Desktop/highwaypiz')
+
+# <codecell>
+
+os.chdir('/home/will/Desktop/highwaypiz')
 
 # <codecell>
 
