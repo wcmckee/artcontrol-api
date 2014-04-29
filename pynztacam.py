@@ -7,9 +7,6 @@
 
 # <codecell>
 
-
-# <codecell>
-
 import xmltodict
 
 # <codecell>
@@ -94,7 +91,7 @@ addyo = sindat[3]
 addyi = sindat[8]
 stad = sindat[7]
 
-faddy = snam + ' ' + addyi + ' new zealand'
+faddy = stad + ' new zealand'
 jnacam = numcam + '.jpg'
 print faddy
 
@@ -113,18 +110,6 @@ print address
 # <codecell>
 
 address.raw
-
-# <codecell>
-
-import json
-
-#write the dictionary to a file
-outfile = open('linkz', 'w')
-json.dump(datadict, outfile)
-
-#read the data back in
-with open('linkz') as infile:
-    newDictionary = json.load(infile)
 
 # <codecell>
 
@@ -160,4 +145,48 @@ Image(filename=jnacam)
 
 # <codecell>
 
+print jpgcam
+
+# <codecell>
+
+ls
+
+# <codecell>
+
+import PIL
+
+# <codecell>
+
+from PIL import Image
+
+# <codecell>
+
+im = Image.open('121.jpg')
+
+# <codecell>
+
+pilspi = im.split()
+
+# <codecell>
+
+for otwo in pilspi:
+    print otwo.show
+    otwo.show()
+
+# <codecell>
+
+otwo.show()
+
+# <codecell>
+
+im.show()
+
+# <codecell>
+
+help('PIL')
+
+# <codecell>
+
+%%bash
+curl -k -H "username: williammckee" -H "password: J3e6t8q5y2" -o linkz https://infoconnect1.highwayinfo.govt.nz/ic/jbi/TrafficCameras/REST/FeedService/
 
