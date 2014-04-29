@@ -41,10 +41,6 @@ mydrop = manager.get_all_droplets()
 
 # <codecell>
 
-mydrop.sort
-
-# <codecell>
-
 print mydrop
 
 # <codecell>
@@ -218,6 +214,20 @@ list(gimg)
 
 # <codecell>
 
+mysnap = manager.get_my_images()
+
+# <codecell>
+
+my_droplets = manager.get_all_droplets()
+
+# <codecell>
+
+for snap in mysnap:
+    print snap.name
+    print snap.id
+
+# <codecell>
+
 my_droplets = manager.get_all_droplets()
 for droplet in my_droplets:
     print droplet
@@ -242,6 +252,10 @@ dropo.power_off()
 # <codecell>
 
 dropo.take_snapshot('deb')
+
+# <codecell>
+
+dropo.status
 
 # <codecell>
 
@@ -279,12 +293,9 @@ print droplis
 # <codecell>
 
 dropserv = digitalocean.Droplet(client_id=digcli, api_key=apikey, name = 'uburub', region_id=5, image_id=3137635, size_id=66, backup_active=False)
-dropserv.create()
+#dropserv.create()
+dropserv.Droplet
 
 # <codecell>
 
-for event in events:
-    event.load()
-    #Once it shows 100, droplet is up and running
-    print event.percentage
 
