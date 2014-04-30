@@ -691,6 +691,53 @@ jamlis = []
 
 for jec in range(lencomp):
     print compjam[jec][u'name']
+    jamlis.append(compjam[jec][u'name'])
+
+# <codecell>
+
+len(jamlis)
+
+# <codecell>
+
+fujamft = list(set(jamlis))
+
+# <codecell>
+
+lencv = len(fujamft)
+
+# <codecell>
+
+chran = random.randint(0, lencv)
+
+# <codecell>
+
+lencv
+
+# <codecell>
+
+import re
+
+a = 'a b .c???d;;'
+chars = [' ']
+
+print re.sub('[%s]' % ''.join(chars), '-', a)
+
+# <codecell>
+
+for fuj in fujamft:
+    a = 'a b .c???d;;'
+    chars = [' ']
+
+    print re.sub('[%s]' % ''.join(chars), '-', a)
+    
+
+# <codecell>
+
+fujamft[chran]
+
+# <codecell>
+
+jamlis
 
 # <codecell>
 
