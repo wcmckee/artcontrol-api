@@ -669,17 +669,33 @@ lencomp = len(compjam)
 
 # <codecell>
 
-ggj = compjam[0]
+import random
 
 # <codecell>
 
-ggj.keys()
+genlin = random.randint(0, lencomp)
 
 # <codecell>
 
-for gj in ggj.keys():
+ggj = compjam[genlin]
+
+# <codecell>
+
+jamlis = []
+
+# <codecell>
+
+#for gj in ggj.keys():
     #print gj
-    print ggj[gj]
+    #print ggj[gj]
+
+for jec in range(lencomp):
+    print compjam[jec][u'name']
+
+# <codecell>
+
+for mehc in ggj.keys():
+    print mehc
 
 # <codecell>
 
