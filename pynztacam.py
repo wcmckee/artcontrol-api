@@ -15,6 +15,14 @@ thexml = ('<?xml version=\'1.0\' encoding=\'UTF-8\'?><tns:getCamerasResponse xml
 
 # <codecell>
 
+oplinz = open('linkz', 'r')
+
+# <codecell>
+
+oplinz.read()
+
+# <codecell>
+
 datadict = xmltodict.parse(thexml)
 
 # <codecell>
@@ -74,6 +82,18 @@ for kez in bthkey:
     print bth[kez]
     sindat.append(bth[kez])
     
+
+# <codecell>
+
+sindat
+
+# <codecell>
+
+idnum = sindat[0]
+
+# <codecell>
+
+print idnum
 
 # <codecell>
 
@@ -146,6 +166,50 @@ Image(filename=jnacam)
 # <codecell>
 
 print jpgcam
+
+# <codecell>
+
+opstatic = requests.get('https://raw.githubusercontent.com/wcmckee/brobeur-static/master/index.html')
+
+# <codecell>
+
+blehstat = opstatic.text
+
+# <codecell>
+
+import BeautifulSoup
+
+# <codecell>
+
+soupz = BeautifulSoup.BeautifulSoup(blehstat)
+
+# <codecell>
+
+newta = soupz.a
+
+# <codecell>
+
+newta
+
+# <codecell>
+
+soupz.h2
+
+# <codecell>
+
+incimg = ('<img src="' + jpgcam + '" alt="Smiley face" width="250" height="200">')
+
+# <codecell>
+
+soupz.h2.replaceWith(incimg)
+
+# <codecell>
+
+print soupz
+
+# <codecell>
+
+brohtm = opstatic.text
 
 # <codecell>
 
