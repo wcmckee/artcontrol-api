@@ -138,12 +138,65 @@ thrlis = []
 # <codecell>
 
 for sc in svex:
-    print sc
-    thrlis.append(sc.get_current_info)
+    #print sc
+    #print sc[u'title']
+    #thrlis.append(sc[u'long imdb title'])
+    #thrlis.append(sc.get_current_info)
     print sc.getID()
     thrlis.append(sc.getID())
-    
-    #print sc.title
+
+# <codecell>
+
+mov = ia.get_movie(thrlis[0])
+
+# <codecell>
+
+mov.guessLanguage()
+
+# <codecell>
+
+cast = mov['cast'][0]
+
+# <codecell>
+
+ia.update(cast)
+
+# <codecell>
+
+cast[u'name']
+
+# <codecell>
+
+cast.notes
+
+# <codecell>
+
+cast.items()
+
+# <codecell>
+
+imghed = cast['headshot']
+
+# <codecell>
+
+from IPython.display import Image
+
+# <codecell>
+
+Image(imghed)
+
+# <codecell>
+
+cast.summary()
+
+# <codecell>
+
+for caz in cast.current_info:
+    print caz
+
+# <codecell>
+
+cast.current_info[0]
 
 # <codecell>
 
