@@ -93,14 +93,27 @@ print jsnArt
 
 # <codecell>
 
-print titArtpoArt = jsnArt['posts']
-titArt =  poArt[0]
+jsnArt.keys()
+
+# <codecell>
+
+jsnArt
+
+# <codecell>
+
+titArt = jsnArt['posts']
+titArt =  titArt[0]
 print titArt
 
 # <codecell>
 
 yaeArt = len(titArt)
 print yaeArt
+
+# <codecell>
+
+for tiar in titArt:
+    print titArt[tiar]
 
 # <markdowncell>
 
