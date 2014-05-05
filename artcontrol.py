@@ -112,17 +112,41 @@ print yaeArt
 
 # <codecell>
 
+arlis = []
+
+# <codecell>
+
+adres = []
+
+# <codecell>
+
 for tiar in titArt:
+    #print titArt[tiar]
+    print tiar
     print titArt[tiar]
+    adres.append(titArt['url'])
+    arlis.append(titArt[tiar])
 
 # <markdowncell>
 
 # How can I get these 16 results in a list?
 
+# <codecell>
+
+arlis
+
 # <markdowncell>
 
 # After some thought I just made a list manually. This needs to be fixed to auto collect
 # these items
+
+# <codecell>
+
+adres
+
+# <codecell>
+
+arlis[
 
 # <codecell>
 
