@@ -146,63 +146,24 @@ adres
 
 # <codecell>
 
-arlis[
-
-# <codecell>
-
-lipArt = ('name','parent','title','url','author','excerpt','slug','comment_count','tag',
-          'date','type','page','id','comment_status')
-
-# <codecell>
-
-print lipArt
-
-# <codecell>
-
-contArt = len(lipArt)
-
-# <codecell>
-
-print contArt
-
-# <codecell>
-
-randArt = random.randint(0,14)
-
-# <codecell>
-
-jerArt = lipArt[randArt]
-print jerArt
-
-# <codecell>
-
-repArt = titArt[jerArt]
-print repArt
-
-# <codecell>
-
-titleArt = titArt['title']
-print titleArt
-
-# <codecell>
-
-extrArt = titArt['excerpt']
-print extrArt
-
-# <codecell>
-
-dateArt = titArt['date']
-print dateArt
+import envoy
 
 # <codecell>
 
 
 # <codecell>
 
+r = envoy.run('cd home/will/Desktop/learnpython; ipython notebook --profile=wcm')
 
 # <codecell>
 
+print r.std_out
 
 # <codecell>
 
+print r.status_code
+
+# <codecell>
+
+print r.history
 
