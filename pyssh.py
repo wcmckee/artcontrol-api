@@ -63,10 +63,44 @@ for event in events:
 
 # <codecell>
 
+servlis = []
+
+# <codecell>
+
 for meip in mydrop:
+    print meip.name
+    servlis.append(meip.name)
     print meip.ip_address
+    servlis.append(meip.ip_address)
     print meip.status
+    servlis.append(meip.status)
     print meip.image_id
+    servlis.append(meip.image_id)
+    servlis.append('wcmckee')
+
+# <codecell>
+
+olis = ['name', 'ip', 'status', 'id', 'user'] * 3
+
+# <codecell>
+
+dictac = zip(olis, servlis)
+
+# <codecell>
+
+dictac
+
+# <codecell>
+
+dicza = dict(dictac)
+
+# <codecell>
+
+dicza
+
+# <codecell>
+
+servlis
 
 # <codecell>
 
@@ -156,6 +190,10 @@ if result == []:
     print >>sys.stderr, "ERROR: %s" % error
 else:
     print result
+
+# <codecell>
+
+pwd
 
 # <codecell>
 
