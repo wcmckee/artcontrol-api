@@ -71,13 +71,13 @@ for link in postData.find_all('a'):
 
 txtzData = (postData.get_text())
 
-print imgzData
+#print imgzData
 
 
 # <codecell>
 
-tlahArt = getArt['title']
-print tlahArt
+#tlahArt = getArt['title']
+#print tlahArt
 
 # <codecell>
 

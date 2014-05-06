@@ -4,6 +4,7 @@
 # <codecell>
 
 import subprocess
+import json
 
 # <codecell>
 
@@ -33,21 +34,17 @@ datadict = xmltodict.parse(data)
 
 # <codecell>
 
-import json
-
-#write the dictionary to a file
-outfile = open('linkz', 'w')
-json.dump(datadict, outfile)
-
-#read the data back in
-with open('linkz') as infile:
-    newDictionary = json.load(infile)
+newdc = json.dumps(datadict)
 
 # <codecell>
 
 savcdat = open('/home/will/Desktop/brobeur-static/feeds/aklmcam.json', 'w')
-savcdat.write(str(newDictionary))
+savcdat.write(str(newdc))
 savcdat.close()
+
+# <codecell>
+
+print ' done!'
 
 # <codecell>
 

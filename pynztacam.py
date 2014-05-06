@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
+# <codecell>
+
+#!/usr/bin/env python
+
 # <headingcell level=1>
 
 # pynztacam
+
+# <codecell>
+
 
 # <codecell>
 
@@ -193,15 +200,35 @@ newta
 
 # <codecell>
 
-soupz.h2
+soupz.img
 
 # <codecell>
 
-incimg = ('<img src="' + jpgcam + '" alt="Smiley face" width="250" height="200">')
+incimg = (jpgcam)
 
 # <codecell>
 
-soupz.h2.replaceWith(incimg)
+print incimg
+
+# <codecell>
+
+nsoup = soupz.prettify()
+
+# <codecell>
+
+print soupz.img
+
+# <codecell>
+
+soupz.ul.append(incimg)
+
+# <codecell>
+
+print nsoup
+
+# <codecell>
+
+soupz.img.insert(0, incimg)
 
 # <codecell>
 
