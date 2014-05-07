@@ -23,30 +23,25 @@ import xmltodict
 
 # <codecell>
 
+datadict = xmltodict.parse(data)
+
+# <codecell>
+
 #savxml = open('/home/will/Desktop/brobeur-static/feeds/aklmcam.json', 'w')
 #savxml.write(data)
 #savxml.close()
 
 # <codecell>
 
-datadict = xmltodict.parse(data)
-
-# <codecell>
-
 import json
-
-#write the dictionary to a file
-outfile = open('linkz', 'w')
-json.dump(datadict, outfile)
-
+jsononjz = json.dumps(datadict)
 #read the data back in
-with open('linkz') as infile:
-    newDictionary = json.load(infile)
+#newDictionary = json.load(datadict)
 
 # <codecell>
 
 savcdat = open('/home/will/Desktop/brobeur-static/feeds/aklmcam.json', 'w')
-savcdat.write(str(newDictionary))
+savcdat.write(str(jsononjz))
 savcdat.close()
 
 # <codecell>
