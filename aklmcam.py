@@ -1,9 +1,22 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
+# <markdowncell>
+
+# \**Auckland Motor Camera:**
+# A project by wcmckee. This script I run as a cronjob every minute in order to keep the json file updated. It logs into the infoconnect highway cameras. This is a xml file. I am not a big fan of working with xml files. I can do it, but I'd rather json. This gives me access to my 
+
+# <markdowncell>
+
+# **TODO** Add more useful data to the json feed. 
+
 # <codecell>
 
 import subprocess
+
+# <markdowncell>
+
+# [nzta](https://infoconnect1.highwayinfo.govt.nz/ "nzta")
 
 # <codecell>
 
@@ -40,9 +53,10 @@ jsononjz = json.dumps(datadict)
 
 # <codecell>
 
-savcdat = open('/home/will/Desktop/brobeur-static/feeds/aklmcam.json', 'w')
+savcdat = open('/home/wcmckee/brobeur-static/feeds/aklmcam.json', 'w')
 savcdat.write(str(jsononjz))
 savcdat.close()
+print('done uploading feed!')
 
 # <codecell>
 
