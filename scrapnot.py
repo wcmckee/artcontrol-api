@@ -12,6 +12,8 @@ import markdown
 # <codecell>
 
 import requests
+import json
+import xmltodict
 
 # <codecell>
 
@@ -19,7 +21,59 @@ hcpux = requests.get('http://feeds.feedburner.com/HamiltonComputerClub?format=xm
 
 # <codecell>
 
-hcpux.
+cerz = hcpux.text
+
+# <codecell>
+
+hamx = xmltodict.parse(cerz)
+
+# <codecell>
+
+for ha in hamx['rss']['channel']:
+    print ha
+
+# <codecell>
+
+staz = hamx['rss']['channel']
+
+# <codecell>
+
+opd = json.dumps(hamx)
+
+# <codecell>
+
+savopd = open('cpuclu.json', 'w')
+
+# <codecell>
+
+savopd.write(opd)
+
+# <codecell>
+
+savopd.close()
+
+# <codecell>
+
+zopa = open('cpuclu.json', 'r')
+
+# <codecell>
+
+
+# <codecell>
+
+myjson = zopa.read()
+
+# <codecell>
+
+sjson = json.dumps(hamx)
+
+# <codecell>
+
+print sjson
+
+# <codecell>
+
+cerz
 
 # <codecell>
 
