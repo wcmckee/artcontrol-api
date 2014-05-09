@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Hamilton Computer Club </title>
+	
+	<link>http://hamiltoncomputerclub.org.nz</link>
+	<description>Exchange information and share skills</description>
+	<lastBuildDate>Thu, 01 May 2014 10:20:40 +0000</lastBuildDate>
+	<language>en-US</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.9.1</generator>
+	<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/HamiltonComputerClub" /><feedburner:info uri="hamiltoncomputerclub" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><feedburner:browserFriendly></feedburner:browserFriendly><item>
+		<title>Windows RIP XP Long live 8.1</title>
+		<link>http://hamiltoncomputerclub.org.nz/windows-rip-xp-long-live-8-1/</link>
+		<comments>http://hamiltoncomputerclub.org.nz/windows-rip-xp-long-live-8-1/#comments</comments>
+		<pubDate>Wed, 09 Apr 2014 21:38:34 +0000</pubDate>
+		<dc:creator><![CDATA[Rod Aldridge]]></dc:creator>
+				<category><![CDATA[Link dump]]></category>
+
+		<guid isPermaLink="false">http://hamiltoncomputerclub.org.nz/?p=417</guid>
+		<description><![CDATA[Microsoft makes Windows free for select devices, announces universal Windows apps By Shawn Knight on April 2, 2014 http://www.techspot.com/news/56240-microsoft-makes-windows-free-for-select-devices-announces-universal-windows-apps.html Microsoft on Wednesday revealed plans to make Windows free for manufacturers to use on smartphones and tablets with screen sizes under nine inches. Furthermore, a future version of Windows for the … <a href="http://hamiltoncomputerclub.org.nz/windows-rip-xp-long-live-8-1/"> Continue reading <span class="meta-nav">&#8594; </span></a>]]></description>
+		<wfw:commentRss>http://hamiltoncomputerclub.org.nz/windows-rip-xp-long-live-8-1/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Python</title>
+		<link>http://hamiltoncomputerclub.org.nz/python/</link>
+		<comments>http://hamiltoncomputerclub.org.nz/python/#comments</comments>
+		<pubDate>Fri, 21 Mar 2014 12:49:39 +0000</pubDate>
+		<dc:creator><![CDATA[wcmckee]]></dc:creator>
+				<category><![CDATA[Software]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[teach]]></category>
+
+		<guid isPermaLink="false">http://hamiltoncomputerclub.org.nz/?p=391</guid>
+		<description><![CDATA[My name is William Mckee. I did a talk in February regarding the Python programming language. I found Bruce through the New Zealand Python users group mailing list. There had been much discussion in the post regarding getting some Python meetups/classes happen. Auckland, Wellington, and Christchurch have monthly Python meetups. … <a href="http://hamiltoncomputerclub.org.nz/python/"> Continue reading <span class="meta-nav">&#8594; </span></a>]]></description>
+		<wfw:commentRss>http://hamiltoncomputerclub.org.nz/python/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Beware fake-capacity USB drives</title>
+		<link>http://hamiltoncomputerclub.org.nz/350/</link>
+		<comments>http://hamiltoncomputerclub.org.nz/350/#comments</comments>
+		<pubDate>Mon, 21 Oct 2013 07:48:44 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce Kingsbury]]></dc:creator>
+				<category><![CDATA[Security]]></category>
+
+		<guid isPermaLink="false">http://hamiltoncomputerclub.org.nz/?p=350</guid>
+		<description><![CDATA[Various Trademe members have comment that there are listings for very cheap 128GB, 256GB and 512GB USB Memory Keys appearing on the site. Please be aware that there is a large number of fake USB Memory Keys being sold on eBay in the USA and from China which the firmware … <a href="http://hamiltoncomputerclub.org.nz/350/"> Continue reading <span class="meta-nav">&#8594; </span></a>]]></description>
+		<wfw:commentRss>http://hamiltoncomputerclub.org.nz/350/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Found on the web 2013/10</title>
+		<link>http://hamiltoncomputerclub.org.nz/201310/</link>
+		<comments>http://hamiltoncomputerclub.org.nz/201310/#comments</comments>
+		<pubDate>Mon, 30 Sep 2013 00:42:11 +0000</pubDate>
+		<dc:creator><![CDATA[Rod Aldridge]]></dc:creator>
+				<category><![CDATA[Link dump]]></category>
+
+		<guid isPermaLink="false">http://hamiltoncomputerclub.org.nz/?p=307</guid>
+		<description><![CDATA[Some items which you may find interesting or useful Some HOWTO&#8217;s and other hints mostly from PC World, some security and privacy alerts, software, some general news, Microsoft news, insight into censorship in China, explanation of Application Programming Interfaces (APIs) and Encryption. Finally some light relief (this year&#8217;s IgNoble Prizes). … <a href="http://hamiltoncomputerclub.org.nz/201310/"> Continue reading <span class="meta-nav">&#8594; </span></a>]]></description>
+		<wfw:commentRss>http://hamiltoncomputerclub.org.nz/201310/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Potential NSA Involvement in a NIST RNG Standard</title>
+		<link>http://hamiltoncomputerclub.org.nz/potential-nsa-involvement-in-a-nist-rng-standard/</link>
+		<comments>http://hamiltoncomputerclub.org.nz/potential-nsa-involvement-in-a-nist-rng-standard/#comments</comments>
+		<pubDate>Mon, 30 Sep 2013 00:22:02 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce Kingsbury]]></dc:creator>
+				<category><![CDATA[Tidbits]]></category>
+
+		<guid isPermaLink="false">http://hamiltoncomputerclub.org.nz/?p=296</guid>
+		<description><![CDATA[In August 2007, a young programmer in Microsoft’s Windows security group stood up to give a five-minute turbo talk at the annual Crypto conference in Santa Barbara. It was a Tuesday evening, part of the conference’s traditional rump session, when a hodge-podge of short talks are presented outside of the … <a href="http://hamiltoncomputerclub.org.nz/potential-nsa-involvement-in-a-nist-rng-standard/"> Continue reading <span class="meta-nav">&#8594; </span></a>]]></description>
+		<wfw:commentRss>http://hamiltoncomputerclub.org.nz/potential-nsa-involvement-in-a-nist-rng-standard/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>New website and blogs</title>
+		<link>http://hamiltoncomputerclub.org.nz/new-website-blogs/</link>
+		<comments>http://hamiltoncomputerclub.org.nz/new-website-blogs/#comments</comments>
+		<pubDate>Tue, 17 Sep 2013 12:26:55 +0000</pubDate>
+		<dc:creator><![CDATA[Virginia Schnauer]]></dc:creator>
+				<category><![CDATA[Notices]]></category>
+		<category><![CDATA[website]]></category>
+
+		<guid isPermaLink="false">http://hamiltoncomputerclub.org.nz/?p=231</guid>
+		<description><![CDATA[I met with Bruce today and have cleaned up some loose end on your new look website. Members can now become contributors or post comments and have conversations. I suggest you all start here by commenting your likes and dislikes regarding look, format and content. It would be great to … <a href="http://hamiltoncomputerclub.org.nz/new-website-blogs/"> Continue reading <span class="meta-nav">&#8594; </span></a>]]></description>
+		<wfw:commentRss>http://hamiltoncomputerclub.org.nz/new-website-blogs/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>PC World Magazine</title>
+		<link>http://hamiltoncomputerclub.org.nz/pc-world-magazine/</link>
+		<comments>http://hamiltoncomputerclub.org.nz/pc-world-magazine/#comments</comments>
+		<pubDate>Sat, 14 Sep 2013 09:24:32 +0000</pubDate>
+		<dc:creator><![CDATA[Virginia Schnauer]]></dc:creator>
+				<category><![CDATA[Tidbits]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[magazines]]></category>
+
+		<guid isPermaLink="false">http://hamiltoncomputerclub.org.nz/?p=190</guid>
+		<description><![CDATA[End of a era PC World magazine has closed down. It is available online http://www.pcworld.co.nz/. The site now offers sections on smartphones and tablets, computers, gadgets, a business centre, home entertainment, cameras, and a forum It is intended for the IT trade publications to continue.]]></description>
+		<wfw:commentRss>http://hamiltoncomputerclub.org.nz/pc-world-magazine/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>First article</title>
+		<link>http://hamiltoncomputerclub.org.nz/first-article/</link>
+		<comments>http://hamiltoncomputerclub.org.nz/first-article/#comments</comments>
+		<pubDate>Sun, 01 Sep 2013 11:06:21 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce Kingsbury]]></dc:creator>
+				<category><![CDATA[Notices]]></category>
+		<category><![CDATA[website]]></category>
+
+		<guid isPermaLink="false">http://hamiltoncomputerclub.org.nz/?p=49</guid>
+		<description><![CDATA[This is the new website of the Hamilton PC computer club. It&#8217;s registered and hosted on wordpress by onlydomains.com. The theme at time or writing is wp386, a throwback to the old BBS days. I&#8217;m sure everybody on the committee is going to absolutely loath it which should encourage them … <a href="http://hamiltoncomputerclub.org.nz/first-article/"> Continue reading <span class="meta-nav">&#8594; </span></a>]]></description>
+		<wfw:commentRss>http://hamiltoncomputerclub.org.nz/first-article/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>
