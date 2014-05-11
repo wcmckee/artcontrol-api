@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
-# <headingcell level=1>
-
-# pywgit
-
 # <markdowncell>
 
+# pywgit
+# ======
+# 
+# + Give user, or lookup via user. ty 
+# + Downloads repos from github
+# 
 # This is a python script to download repos from github
 # It takes the login name (wcmckee in my case) and downloads the repos of github user (the system login name). It downloads it to the home dir. 
 # The program checks if you have local folders that are also on github. It will skip them from downloading from github. 
