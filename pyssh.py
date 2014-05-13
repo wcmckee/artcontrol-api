@@ -14,7 +14,14 @@
 # <li>save info off as json/html</li>
 # 
 # Plans start as little as $5.00 a month. Servers are charged per the hour. 
-# [Digital Ocean](http://digitalocean.com/)
+# [Digital Ocean]( https://www.digitalocean.com/?refcode=60d1553694c3 )
+# 
+# 
+
+# <markdowncell>
+
+# TODO:
+# - fix login
 
 # <codecell>
 
@@ -29,15 +36,15 @@ opapi = open('passap', 'r')
 
 # <codecell>
 
-digclip = str(opcli.read())
+digclip =  'a24a5636402aaf75d07b774d98591ea3'
+digcli = 'dd418a3ea26e7a7ff9e7cd791c0f1b4d'
 
 # <codecell>
 
-digcli = str(opapi.read())
 
 # <codecell>
 
-manager = digitalocean.Manager(client_id = digcli, api_key = apikey)
+manager = digitalocean.Manager(client_id = digclip, api_key = digcli)
 
 # <codecell>
 

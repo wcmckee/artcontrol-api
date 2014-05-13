@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
-# <headingcell level=1>
-
-# pywgit
-
 # <markdowncell>
 
+# <h1>pywgit</h1>
+# 
 # This is a python script to download repos from github
 # It takes the login name (wcmckee in my case) and downloads the repos of github user (the system login name). It downloads it to the home dir. 
 # The program checks if you have local folders that are also on github. It will skip them from downloading from github. 
@@ -44,7 +42,15 @@ for us in usergen:
 
 # <codecell>
 
-g = Github()
+opaz = open('gpaz', 'r')
+
+# <codecell>
+
+opac = opaz.read()
+
+# <codecell>
+
+g = Github('wcmckee',  'bill123now!')
 
 # <codecell>
 
@@ -62,7 +68,7 @@ typy = g.search_users(theuser)
 
 blehgit = g.search_repositories('reddit')
 
-# <rawcell>
+# <markdowncell>
 
 # oh man, what have i got happening here. This started with a way of downloading repos in bulk from a user and ive started to bring in more github module. Here I am searching repositories on github for reddit. 
 # What things could i get it to search for?
@@ -240,11 +246,11 @@ os.mkdir('/home/will/github')
 
 # <codecell>
 
-os.chdir('/home/' + 'will' + '/github')
+os.chdir('/home/' + 'wcmckee')
 
 # <codecell>
 
-lisdir = os.listdir('/home/will/github')
+lisdir = os.listdir('/home/wcmckee')
 curlist = []
 for ls in lisdir:
     #print ls
@@ -282,7 +288,7 @@ from clint.textui import colored
 for gitbl in dlrepo:
         #print ('Downloading - ' + theuser + " - "  + gitbl)
         print (colored.red('Downloading - ' + 'wcmckee' + " - "  + gitbl))
-        git.Git().clone("https://github.com/" + 'wcmckee' + "/" + gitbl)
+        #git.Git().clone("https://github.com/" + 'wcmckee' + "/" + gitbl)
 
 # <codecell>
 
@@ -412,6 +418,15 @@ dictv = compdict.values()
 # <codecell>
 
 dictv.count('id')
+
+# <markdowncell>
+
+# <h1>This is header one</h1>
+# 
+# This is going to be a 
+# 
+# new line.
+# 
 
 # <codecell>
 
