@@ -3,7 +3,15 @@
 
 # <markdowncell>
 
+<<<<<<< HEAD
 # <h1>pywgit</h1>
+=======
+# pywgit
+# ======
+# 
+# + Give user, or lookup via user. ty 
+# + Downloads repos from github
+>>>>>>> dfddfb98f068483ec96e585fe0a02d4453b53456
 # 
 # This is a python script to download repos from github
 # It takes the login name (wcmckee in my case) and downloads the repos of github user (the system login name). It downloads it to the home dir. 

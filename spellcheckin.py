@@ -8,6 +8,8 @@
 # 
 # Project to spellcheck my writing. Lately I have gotten back into writing. I guess I always have but I've notived it more. I want to develop a new blog for my writing. I have started using Nikola for blogging. It is powered by Python.
 # I have been writing text in a nano. I'd like to develop a spell checker to fix the mistakes I write. 
+# IPython Notebook doesn't have a spell checker built in.
+# Open up this notebook and edit this Markdown for errors.
 
 # <codecell>
 
@@ -49,7 +51,27 @@ known_edits2('chek')
 
 # <codecell>
 
-openpost = open()
+openpost = open('spellcheckin.ipynb', 'r')
+
+# <codecell>
+
+postdet = openpost.read()
+
+# <codecell>
+
+postdet['metadata']
+
+# <codecell>
+
+postdet.count
+
+# <codecell>
+
+import json
+
+# <codecell>
+
+json.dumps(postdet)
 
 # <codecell>
 
@@ -62,6 +84,19 @@ correct('test')
 # <codecell>
 
 edits1('helo')
+
+# <codecell>
+
+
+# <codecell>
+
+print 'hello world!'
+
+# <rawcell>
+
+
+# <codecell>
+
 
 # <codecell>
 
