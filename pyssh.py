@@ -1,13 +1,20 @@
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
-# <headingcell level=1>
-
-# pydigdrop
-
 # <markdowncell>
 
-# This Python script uses digitalocean services.  It gets the users server list - from the vps hosting company Digital Ocean. Their plans start as little as $5.00 and are charged by the hour. 
+# <h2>pydigdrop</h2>
+# 
+# <p>This Python script uses Digital Ocean api services. Importing the features from the Python module digitalocean. Data is pulled and edited. 
+# 
+# <p>Here is a list of features and ideas.</p>
+# <li>Returns user server list. </li>
+# <li>Returns info about servers - name/ip/location/status/distro id/distro.</li>
+# <li>shutdown, make snapshot, startup all servers (or just one!)</li>
+# <li>save info off as json/html</li>
+# 
+# Plans start as little as $5.00 a month. Servers are charged per the hour. 
+# [Digital Ocean](http://digitalocean.com/)
 
 # <codecell>
 
@@ -17,19 +24,16 @@ import digitalocean
 
 # <codecell>
 
-digcli = ('a24a5636402aaf75d07b774d98591ea3')
+opcli = open('passwd', 'r')
+opapi = open('passap', 'r')
 
 # <codecell>
 
-print digcli
+digclip = str(opcli.read())
 
 # <codecell>
 
-apikey = ('9898216d345df5b70ab943c5005c05df')
-
-# <codecell>
-
-print apikey
+digcli = str(opapi.read())
 
 # <codecell>
 
