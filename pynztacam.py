@@ -26,10 +26,6 @@ oplinz = open('linkz', 'r')
 
 # <codecell>
 
-oplinz.read()
-
-# <codecell>
-
 datadict = xmltodict.parse(thexml)
 
 # <codecell>
@@ -72,7 +68,32 @@ theimgz = random.randint(0,neth)
 
 # <codecell>
 
-bth = bthere[theimgz]
+bth = bthere[4]
+
+# <codecell>
+
+def returndata(self):
+    for self in range(neth):
+        print bthere[self]
+        print bthere[0]['tns:imageUrl']
+
+# <codecell>
+
+def checkself(self):
+    
+
+# <codecell>
+
+bthere[0]['tns:imageUrl']
+
+# <codecell>
+
+returndata(6)
+
+# <codecell>
+
+for bea in range(neth):
+    print bthere[bea]
 
 # <codecell>
 

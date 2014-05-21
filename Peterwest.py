@@ -3,11 +3,14 @@
 
 # <codecell>
 
+# First list
+
+# <codecell>
+
 # Taking off from where I had left off! Lists and Tuples
 
 # <codecell>
 
-# First list
 
 # <codecell>
 
@@ -55,4 +58,20 @@ for username in usernames:
 
 # <codecell>
 
+# functions! Wow!
+
+# <codecell>
+
+# Defining a function
+def function_name(argument_1, argument_2):
+    
+    def Thank_you(name!):
+     #This function prints a two lined note of thanks 
+        print("You are doing good work, %s!" %name)
+        print("Thank you very much for your efforts at home!")
+        
+        "Thank_you( 'Mary')
+        "Thank_you( 'Paul')
+        "Thank_you( 'Claire')
+        
 
