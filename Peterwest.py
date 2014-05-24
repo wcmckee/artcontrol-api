@@ -65,13 +65,21 @@ for username in usernames:
 # Defining a function
 def function_name(argument_1, argument_2):
     
-    def Thank_you(name!):
+    def Thank_you(name):
      #This function prints a two lined note of thanks 
         print("You are doing good work, %s!" %name)
         print("Thank you very much for your efforts at home!")
         
-        "Thank_you( 'Mary')
-        "Thank_you( 'Paul')
-        "Thank_you( 'Claire')
+        "Thank_you('Mary')
+        "Thank_you('Paul')
+        "Thank_you('Claire')
         
+        
+
+# <codecell>
+
+#Try again!!
+def show_students(students, message):
+    
+    
 
