@@ -36,6 +36,7 @@ lodArt = jawArt['posts']
 
 # <codecell>
 
+pwd
 
 # <codecell>
 
@@ -133,20 +134,30 @@ adres = []
 
 # <codecell>
 
-titArt.keys()
+for ite in titArt.keys():
+    print ite
+    for blehz in titArt:
+        print blehz
 
 # <codecell>
 
 for tiar in titArt:
     #print titArt[tiar]
-    print tiar
-    print titArt[tiar]
-    adres.append(titArt['url'])
-    arlis.append(titArt[tiar])
+    #print tiar
+    #print titArt[tiar]
+    adres.append(titArt[ite])
+    #arlis.append(titArt[tiar])
 
 # <markdowncell>
 
 # How can I get these 16 results in a list?
+
+# <codecell>
+
+
+# <codecell>
+
+adres
 
 # <codecell>
 
