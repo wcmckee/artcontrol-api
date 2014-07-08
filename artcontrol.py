@@ -39,7 +39,7 @@ lodArt = jawArt['posts']
 
 # <codecell>
 
-print lodArt[1]
+print lodArt[0]
 
 # <codecell>
 
@@ -58,6 +58,10 @@ savart.close
 
 opart = open('latepost', 'r')
 opart.read()
+
+# <codecell>
+
+pwd
 
 # <codecell>
 
