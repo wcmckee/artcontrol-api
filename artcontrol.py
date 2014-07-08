@@ -5,6 +5,10 @@
 
 # ArtControl.me Python Development
 
+# <markdowncell>
+
+# This is a script to get the latest posts and data from artcontrol.me blog and post it into the static html site.
+
 # <codecell>
 
 import requests
@@ -29,10 +33,6 @@ lodArt = jawArt['posts']
 
 # <codecell>
 
-print lodArt[1]
-
-# <codecell>
-
 
 # <codecell>
 
@@ -49,6 +49,15 @@ behArt = lodArt[1]
 
 areArt = behArt['content']
 print areArt
+
+# <codecell>
+
+savart = open('latepost', 'w')
+savart.write(areArt)
+savart.close
+
+opart = open('latepost', 'r')
+opart.read()
 
 # <codecell>
 
@@ -120,6 +129,10 @@ adres = []
 
 # <codecell>
 
+titArt.keys()
+
+# <codecell>
+
 for tiar in titArt:
     #print titArt[tiar]
     print tiar
@@ -139,31 +152,4 @@ arlis
 
 # After some thought I just made a list manually. This needs to be fixed to auto collect
 # these items
-
-# <codecell>
-
-adres
-
-# <codecell>
-
-import envoy
-
-# <codecell>
-
-
-# <codecell>
-
-r = envoy.run('cd home/will/Desktop/learnpython; ipython notebook --profile=wcm')
-
-# <codecell>
-
-print r.std_out
-
-# <codecell>
-
-print r.status_code
-
-# <codecell>
-
-print r.history
 
