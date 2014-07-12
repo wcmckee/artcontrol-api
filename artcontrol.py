@@ -144,26 +144,3 @@ arlis
 
 adres
 
-# <codecell>
-
-import envoy
-
-# <codecell>
-
-
-# <codecell>
-
-r = envoy.run('cd home/will/Desktop/learnpython; ipython notebook --profile=wcm')
-
-# <codecell>
-
-print r.std_out
-
-# <codecell>
-
-print r.status_code
-
-# <codecell>
-
-print r.history
-

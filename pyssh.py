@@ -93,6 +93,7 @@ for meip in mydrop:
     servlis.append(meip.image_id)
     servlis.append('wcmckee')
     servlis.append(meip.region_id)
+    servlis.append(meip.)
 
 # <codecell>
 
@@ -112,133 +113,11 @@ fservlz
 
 # <codecell>
 
-from crontab import CronTab
-
-# <codecell>
-
-syscrm = CronTab()
-
-# <codecell>
-
-job = syscrm.new(command='cd learnpython; ipython notebook --profile=wcm')
-
-# <codecell>
-
-job.every_reboot()
-
-# <codecell>
-
-job.enable()
-
-# <codecell>
-
-job.frequency_per_day()
-
-# <codecell>
-
 clisz = []
 
 # <codecell>
 
-svex = ia.search_movie('game of thrones')
-
-# <codecell>
-
 thrlis = []
-
-# <codecell>
-
-for sc in svex:
-    #print sc
-    #print sc[u'title']
-    #thrlis.append(sc[u'long imdb title'])
-    #thrlis.append(sc.get_current_info)
-    print sc.getID()
-    thrlis.append(sc.getID())
-
-# <codecell>
-
-mov = ia.get_movie(thrlis[0])
-
-# <codecell>
-
-mov.guessLanguage()
-
-# <codecell>
-
-cast = mov['cast'][0]
-
-# <codecell>
-
-ia.update(cast)
-
-# <codecell>
-
-cast[u'name']
-
-# <codecell>
-
-cast.notes
-
-# <codecell>
-
-cast.items()
-
-# <codecell>
-
-imghed = cast['headshot']
-
-# <codecell>
-
-from IPython.display import Image
-
-# <codecell>
-
-Image(imghed)
-
-# <codecell>
-
-cast.summary()
-
-# <codecell>
-
-for caz in cast.current_info:
-    print caz
-
-# <codecell>
-
-cast.current_info[0]
-
-# <codecell>
-
-thrlis
-
-# <codecell>
-
-svex
-
-# <codecell>
-
-dex = ia.get_character('dexter')
-
-# <codecell>
-
-from imdb import IMDb
-ia = IMDb()
-
-the_matrix = ia.get_movie('0133093')
-print the_matrix['director']
-
-for person in ia.search_person('Mel Gibson'):
-        print person.personID, person['name']
-
-# <codecell>
-
-servlis
-
-# <codecell>
-
-olis = ['name', 'ip', 'status', 'id', 'user'] * 3
 
 # <codecell>
 
