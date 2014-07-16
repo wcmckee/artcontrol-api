@@ -54,7 +54,7 @@ print areArt
 # <codecell>
 
 savart = open('latepost', 'w')
-savart.write(areArt)
+savart.write(str(areArt))
 savart.close
 
 opart = open('latepost', 'r')
