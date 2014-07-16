@@ -159,6 +159,7 @@ for tiar in titArt:
 
 adres
 
+<<<<<<< HEAD
 # <codecell>
 
 arlis
@@ -168,3 +169,5 @@ arlis
 # After some thought I just made a list manually. This needs to be fixed to auto collect
 # these items
 
+=======
+>>>>>>> b659041c2a37da8db8236833152b4cecc67c63bd

@@ -173,7 +173,7 @@ import os
 
 # <codecell>
 
-os.chdir('/home/will/Desktop/highwaypiz')
+os.chdir('/home/wcmckee/Desktop/highwaypiz')
 
 # <codecell>
 
@@ -188,7 +188,6 @@ with open(jnacam, 'wb') as handle:
 # <codecell>
 
 from IPython.display import Image 
-    
 Image(filename=jnacam)
 
 # <codecell>
@@ -508,6 +507,58 @@ doc.close
 # <markdowncell>
 
 # <h1>Hack Auckland</h1>
+
+# <codecell>
+
+import requests
+
+# <codecell>
+
+atkey = open('atkey', 'r')
+
+# <codecell>
+
+atkeyz = atkey.read
+
+# <codecell>
+
+with open('atkey','r') as f:
+    f.read()
+
+# <codecell>
+
+
+# <codecell>
+
+urlreq = ('https://api.at.govt.nz/v1/public/display/scheduledworks?api_key='  + atkeyz)
+
+# <codecell>
+
+atkeyz.read
+
+# <codecell>
+
+print atkeyz
+
+# <codecell>
+
+print urlreq
+
+# <codecell>
+
+parkinfo = requests.get('https://api.at.govt.nz/v1/public/display/scheduledworks?api_key=433feddb-d4b9-473b-a0c2-ac982a6d78cd')
+
+# <codecell>
+
+api.at.govt.nz/v1/public/display/scheduledworks?api_key=433feddb-d4b9-473b-a0c2-ac982a6d78cd
+
+# <codecell>
+
+parkinfo
+
+# <codecell>
+
+parkinfo.text
 
 # <codecell>
 
